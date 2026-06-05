@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+
+logs/
+tmp/
+workspaces/
+codex-workspaces/
+node_modules/

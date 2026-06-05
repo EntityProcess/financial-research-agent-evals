@@ -1,0 +1,2 @@
+@[user]:
+How has US Steel addressed its planned merger with Nippon Steel and its effect on its business operations?
