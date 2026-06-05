@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "eval_file": "/public-demo/financial-research-agent/evals/financial-research-agent.eval.yaml",
+    "timestamp": "2026-06-05T14:16:44.121Z",
+    "targets": [
+      "codex"
+    ],
+    "tests_run": [
+      "how-has-us-steel-addressed-its-planned-merger-with-nippon-steel-and-its-"
+    ],
+    "experiment": "av-h60-live-codex-azure",
+    "planned_test_count": 1
+  },
+  "run_summary": {
+    "codex": {
+      "pass_rate": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 65.673,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 34218,
+        "stddev": 0
+      }
+    }
+  },
+  "per_grader_summary": {
+    "rubrics:llm-grader": {
+      "mean": 0,
+      "stddev": 0
+    }
+  },
+  "notes": []
+}

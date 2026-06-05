@@ -1,0 +1,12 @@
+@[assistant]:
+U.S. Steel addressed the Nippon Steel transaction as a major pending merger that constrained and could disrupt normal operations, but not as a completed operational integration until closing.
+
+Key facts:
+
+- U.S. Steel agreed to be acquired by Nippon Steel through Nippon Steel North America, with U.S. Steel surviving as a wholly owned subsidiary. Shareholders approved the merger on April 12, 2024. The merger consideration was **$55.00 per U.S. Steel share**. [SEC filing](https://www.sec.gov/Archives/edgar/data/1163302/000116330225000018/R10.htm), [Nippon Steel annual securities report](https://www.nipponsteel.com/en/ir/library/pdf/securitiesreport_2024.pdf)
+- While pending, U.S. Steel said the merger agreement required it to operate **“in the ordinary course of business”** and restricted certain actions outside the ordinary course without Nippon Steel’s consent. [SEC 2024 10-K](https://www.sec.gov/Archives/edgar/data/1163302/000116330225000018/x-20241231.htm)
+- U.S. Steel disclosed operational risks from the deal: management distraction, litigation, unexpected costs, possible limits on pursuing business opportunities or strategic transactions, and potential adverse effects on retaining customers, suppliers, employees, and key personnel. [U.S. Steel/Nippon statement](https://www.nipponsteel.com/en/newsroom/news/2025/__icsFiles/afieldfile/2025/09/26/20250614_100.pdf)
+- The deal closed on **June 18, 2025**, after a National Security Agreement with the U.S. government. U.S. Steel became a consolidated subsidiary of Nippon Steel. [Nippon Steel annual securities report](https://www.nipponsteel.com/en/ir/library/pdf/securitiesreport_2024.pdf)
+- To address U.S. operational and national-security concerns, the agreement included about **$11 billion of new U.S. Steel investments by 2028**, Pittsburgh headquarters retention, U.S.-citizen board/management commitments, U.S. production commitments, and U.S. government “Golden Share” consent rights over matters such as moving jobs/production offshore or closing/idling certain U.S. facilities. [Nippon Steel annual securities report](https://www.nipponsteel.com/en/ir/library/pdf/securitiesreport_2024.pdf)
+
+Bottom line: U.S. Steel presented the merger as strategically important but operationally constraining while pending; after closing, the company framed the deal as preserving U.S. operations while adding Nippon Steel-backed investment and governance commitments.
