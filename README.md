@@ -4,8 +4,8 @@ Public-safe AgentV result artifacts for the `financial-research-agent` demo
 project.
 
 Source eval definitions live in `christso/financial-research-agent`. This repo
-stores Dashboard-ready artifacts under `runs/` only. Before pushing artifacts,
-run the public artifact preflight from `agentv-deploy`:
+stores Dashboard-ready artifacts under `.agentv/results/runs/` only. Before
+pushing artifacts, run the public artifact preflight from `agentv-deploy`:
 
 ```sh
 python3 ../agentv-deploy/scripts/check-public-result-artifacts.py .
