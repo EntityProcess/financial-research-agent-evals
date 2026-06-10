@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Production expected to begin in 2025",
+      "passed": true,
+      "evidence": "The candidate explicitly says production is expected to begin in calendar year 2025, which matches the criterion."
+    },
+    {
+      "text": "[criterion-2] Production expected to begin in 2025",
+      "passed": true,
+      "evidence": "The candidate does not contradict the 2025 start date; it states the same timing."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Production expected to begin in 2025",
+          "passed": true,
+          "evidence": "The candidate explicitly says production is expected to begin in calendar year 2025, which matches the criterion."
+        },
+        {
+          "text": "[criterion-2] Production expected to begin in 2025",
+          "passed": true,
+          "evidence": "The candidate does not contradict the 2025 start date; it states the same timing."
+        }
+      ]
+    }
+  ]
+}

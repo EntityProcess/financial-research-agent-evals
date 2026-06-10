@@ -1,0 +1,87 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] $500 million of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures",
+      "passed": true,
+      "evidence": "The candidate explicitly states that Allstate had $500 million outstanding of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures."
+    },
+    {
+      "text": "[criterion-2] Scheduled maturity date: May 15, 2057",
+      "passed": true,
+      "evidence": "The candidate says the scheduled maturity is May 15, 2057."
+    },
+    {
+      "text": "[criterion-3] Final maturity date: May 15, 2067",
+      "passed": true,
+      "evidence": "The candidate says the final maturity is May 15, 2067."
+    },
+    {
+      "text": "[criterion-4] Redeemable on or after May 15, 2037 at principal amount plus accrued and unpaid interest",
+      "passed": true,
+      "evidence": "The candidate states the debentures are redeemable on or after May 15, 2037 at principal plus accrued and unpaid interest."
+    },
+    {
+      "text": "[criterion-5] Redeemable prior to May 15, 2037 at principal amount plus accrued and unpaid interest or make-whole price",
+      "passed": true,
+      "evidence": "The candidate states that prior to May 15, 2037 redemption is allowed in certain circumstances at principal plus accrued and unpaid interest or, if greater, a make-whole price."
+    },
+    {
+      "text": "[criterion-6] As of December 31, 2024, the Company had outstanding $500 million of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures (“Junior Subordinated Debentures”). The scheduled maturity date for the Debentures is May 15, 2057 with a final maturity date of May 15, 2067. The Junior Subordinated Debentures may be redeemed (i) in whole or in part, at any time on or after May 15, 2037 at the principal amount plus accrued and unpaid interest to the date of redemption, or (ii) in certain circumstances, in whole or in part, prior to May 15, 2037 at the principal amount plus accrued and unpaid interest to the date of redemption or, if greater, a make-whole price. Additional information can be provided upon request.",
+      "passed": true,
+      "evidence": "The candidate does not contradict the reference answer; it is consistent with the cited terms and adds extra detail without conflict."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] $500 million of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures",
+          "passed": true,
+          "evidence": "The candidate explicitly states that Allstate had $500 million outstanding of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures."
+        },
+        {
+          "text": "[criterion-2] Scheduled maturity date: May 15, 2057",
+          "passed": true,
+          "evidence": "The candidate says the scheduled maturity is May 15, 2057."
+        },
+        {
+          "text": "[criterion-3] Final maturity date: May 15, 2067",
+          "passed": true,
+          "evidence": "The candidate says the final maturity is May 15, 2067."
+        },
+        {
+          "text": "[criterion-4] Redeemable on or after May 15, 2037 at principal amount plus accrued and unpaid interest",
+          "passed": true,
+          "evidence": "The candidate states the debentures are redeemable on or after May 15, 2037 at principal plus accrued and unpaid interest."
+        },
+        {
+          "text": "[criterion-5] Redeemable prior to May 15, 2037 at principal amount plus accrued and unpaid interest or make-whole price",
+          "passed": true,
+          "evidence": "The candidate states that prior to May 15, 2037 redemption is allowed in certain circumstances at principal plus accrued and unpaid interest or, if greater, a make-whole price."
+        },
+        {
+          "text": "[criterion-6] As of December 31, 2024, the Company had outstanding $500 million of Series A 6.500% Fixed-to-Floating Rate Junior Subordinated Debentures (“Junior Subordinated Debentures”). The scheduled maturity date for the Debentures is May 15, 2057 with a final maturity date of May 15, 2067. The Junior Subordinated Debentures may be redeemed (i) in whole or in part, at any time on or after May 15, 2037 at the principal amount plus accrued and unpaid interest to the date of redemption, or (ii) in certain circumstances, in whole or in part, prior to May 15, 2037 at the principal amount plus accrued and unpaid interest to the date of redemption or, if greater, a make-whole price. Additional information can be provided upon request.",
+          "passed": true,
+          "evidence": "The candidate does not contradict the reference answer; it is consistent with the cited terms and adds extra detail without conflict."
+        }
+      ]
+    }
+  ]
+}

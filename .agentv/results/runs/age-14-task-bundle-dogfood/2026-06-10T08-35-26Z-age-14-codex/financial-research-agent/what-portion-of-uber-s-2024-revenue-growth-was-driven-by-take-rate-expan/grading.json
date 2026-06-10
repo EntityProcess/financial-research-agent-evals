@@ -1,0 +1,127 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Take rate 2023: 27.04%",
+      "passed": true,
+      "evidence": "Candidate states 2023 take rate was 27.04%."
+    },
+    {
+      "text": "[criterion-2] Take rate 2024: 27.02%",
+      "passed": true,
+      "evidence": "Candidate states 2024 take rate was 27.02%."
+    },
+    {
+      "text": "[criterion-3] Take rate was virtually flat from 2023 to 2024",
+      "passed": true,
+      "evidence": "Candidate explicitly says the take rate was 'virtually flat' and slightly lower in 2024."
+    },
+    {
+      "text": "[criterion-4] Overall revenue growth was 18%",
+      "passed": true,
+      "evidence": "Candidate states revenue growth was 18%."
+    },
+    {
+      "text": "[criterion-5] Gross bookings growth YoY: 18%",
+      "passed": true,
+      "evidence": "Candidate states gross bookings growth was 18%."
+    },
+    {
+      "text": "[criterion-6] Mobility segment growth: 25%",
+      "passed": true,
+      "evidence": "Candidate includes mobility growth of 25%."
+    },
+    {
+      "text": "[criterion-7] Delivery segment growth: 17%",
+      "passed": true,
+      "evidence": "Candidate includes delivery growth of 17%."
+    },
+    {
+      "text": "[criterion-8] Freight segment growth: 2%",
+      "passed": true,
+      "evidence": "Candidate includes freight growth of 2%."
+    },
+    {
+      "text": "[criterion-9] All growth in revenue was driven by volume, not take rate increases",
+      "passed": true,
+      "evidence": "Candidate concludes revenue growth was driven by volume/Gross Bookings growth, with no meaningful take-rate expansion."
+    },
+    {
+      "text": "[criterion-10] Take Rate:\n2023: 27.04%\n2024: 27.02%\n\nTake rate was virtually flat from 2023 to 2024. Overall revenue growth was 18%, driven by the 18% gross bookings growth YoY (25% in mobility, 17% in delivery and 2% in freight). Hence, all growth in revenue was driven by pure volume as opposed to take rate increases\n",
+      "passed": true,
+      "evidence": "Candidate does not contradict the reference answer; it aligns with the same conclusion and supporting figures."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Take rate 2023: 27.04%",
+          "passed": true,
+          "evidence": "Candidate states 2023 take rate was 27.04%."
+        },
+        {
+          "text": "[criterion-2] Take rate 2024: 27.02%",
+          "passed": true,
+          "evidence": "Candidate states 2024 take rate was 27.02%."
+        },
+        {
+          "text": "[criterion-3] Take rate was virtually flat from 2023 to 2024",
+          "passed": true,
+          "evidence": "Candidate explicitly says the take rate was 'virtually flat' and slightly lower in 2024."
+        },
+        {
+          "text": "[criterion-4] Overall revenue growth was 18%",
+          "passed": true,
+          "evidence": "Candidate states revenue growth was 18%."
+        },
+        {
+          "text": "[criterion-5] Gross bookings growth YoY: 18%",
+          "passed": true,
+          "evidence": "Candidate states gross bookings growth was 18%."
+        },
+        {
+          "text": "[criterion-6] Mobility segment growth: 25%",
+          "passed": true,
+          "evidence": "Candidate includes mobility growth of 25%."
+        },
+        {
+          "text": "[criterion-7] Delivery segment growth: 17%",
+          "passed": true,
+          "evidence": "Candidate includes delivery growth of 17%."
+        },
+        {
+          "text": "[criterion-8] Freight segment growth: 2%",
+          "passed": true,
+          "evidence": "Candidate includes freight growth of 2%."
+        },
+        {
+          "text": "[criterion-9] All growth in revenue was driven by volume, not take rate increases",
+          "passed": true,
+          "evidence": "Candidate concludes revenue growth was driven by volume/Gross Bookings growth, with no meaningful take-rate expansion."
+        },
+        {
+          "text": "[criterion-10] Take Rate:\n2023: 27.04%\n2024: 27.02%\n\nTake rate was virtually flat from 2023 to 2024. Overall revenue growth was 18%, driven by the 18% gross bookings growth YoY (25% in mobility, 17% in delivery and 2% in freight). Hence, all growth in revenue was driven by pure volume as opposed to take rate increases\n",
+          "passed": true,
+          "evidence": "Candidate does not contradict the reference answer; it aligns with the same conclusion and supporting figures."
+        }
+      ]
+    }
+  ]
+}

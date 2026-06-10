@@ -1,0 +1,70 @@
+execution:
+  target: codex
+tests:
+  - id: what-adjustments-does-airbnb-nasdaq-abnb-make-to-its-net-income-to-deriv
+    metadata:
+      source_row: 40
+      question_type: Adjustments
+      expert_time_mins: "10"
+    input: |
+      What adjustments does Airbnb (NASDAQ: ABNB) make to its Net Income to Derive Adjusted EBITDA?
+    expected_output: |
+      Provision for (benefit from) income taxes;
+      Other income (expense), net;
+      Interest income;
+      Depreciation and amortization;
+      Stock-based compensation expense;
+      Acquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements, and
+      Lodging taxes, withholding taxes, and transactional taxes where there is significant uncertainty as to how the taxes apply to our platform.
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Provision for (benefit from) income taxes
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Other income (expense), net
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: Interest income
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: Depreciation and amortization
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: Stock-based compensation expense
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: Acquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: Lodging taxes, withholding taxes, and transactional taxes with significant uncertainty on application to platform
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-8
+            outcome: |
+              Provision for (benefit from) income taxes;
+              Other income (expense), net;
+              Interest income;
+              Depreciation and amortization;
+              Stock-based compensation expense;
+              Acquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements, and
+              Lodging taxes, withholding taxes, and transactional taxes where there is significant uncertainty as to how the taxes apply to our platform.
+            operator: contradiction
+            weight: 1
+            required: true

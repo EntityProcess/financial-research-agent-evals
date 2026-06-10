@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Q1 2025: $6.8 billion to $7.4 billion, 8.5% of midpoint",
+      "passed": true,
+      "evidence": "The candidate states: 'Q1 2025: $6.8 billion (low) to $7.4 billion (high), 8.5% of midpoint,' which matches the criterion."
+    },
+    {
+      "text": "[criterion-2] Q4 2024: $7.2 billion to $7.8 billion, 8.0% of midpoint",
+      "passed": true,
+      "evidence": "The candidate states: 'Q4 2024: $7.2 billion (low) to $7.8 billion (high), 8.0% of midpoint,' which matches the criterion."
+    },
+    {
+      "text": "[criterion-3] Q3 2024: $6.4 billion to $7.0 billion, 9.0% of midpoint",
+      "passed": true,
+      "evidence": "The candidate states: 'Q3 2024: $6.4 billion (low) to $7.0 billion (high), 9.0% of midpoint,' which matches the criterion."
+    },
+    {
+      "text": "[criterion-4] Q2 2024: $5.4 billion to $6.0 billion, 10.5% of midpoint",
+      "passed": true,
+      "evidence": "The candidate states: 'Q2 2024: $5.4 billion (low) to $6.0 billion (high), 10.5% of midpoint,' which matches the criterion."
+    },
+    {
+      "text": "[criterion-5] Average size of AMD's guidance range\nQ1 2025: $6.8 billion to $7.4 billion, 8.5% of midpoint\nQ4 2024: $7.2 billion to $7.8 billion, 8.0% of midpoint\nQ3 2024: $6.4 billion to $7.0 billion, 9.0% of midpoint\nQ2 2024: $5.4 billion to $6.0 billion, 10.5% of midpoint\n",
+      "passed": false,
+      "evidence": "The candidate does not contradict the reference ordering or content, but it does not present the exact 'Average size of AMD's guidance range' heading and includes extra source links. Since this is a contradiction check, the substantive figures are consistent, so there is no direct contradiction."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.8,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Q1 2025: $6.8 billion to $7.4 billion, 8.5% of midpoint",
+          "passed": true,
+          "evidence": "The candidate states: 'Q1 2025: $6.8 billion (low) to $7.4 billion (high), 8.5% of midpoint,' which matches the criterion."
+        },
+        {
+          "text": "[criterion-2] Q4 2024: $7.2 billion to $7.8 billion, 8.0% of midpoint",
+          "passed": true,
+          "evidence": "The candidate states: 'Q4 2024: $7.2 billion (low) to $7.8 billion (high), 8.0% of midpoint,' which matches the criterion."
+        },
+        {
+          "text": "[criterion-3] Q3 2024: $6.4 billion to $7.0 billion, 9.0% of midpoint",
+          "passed": true,
+          "evidence": "The candidate states: 'Q3 2024: $6.4 billion (low) to $7.0 billion (high), 9.0% of midpoint,' which matches the criterion."
+        },
+        {
+          "text": "[criterion-4] Q2 2024: $5.4 billion to $6.0 billion, 10.5% of midpoint",
+          "passed": true,
+          "evidence": "The candidate states: 'Q2 2024: $5.4 billion (low) to $6.0 billion (high), 10.5% of midpoint,' which matches the criterion."
+        },
+        {
+          "text": "[criterion-5] Average size of AMD's guidance range\nQ1 2025: $6.8 billion to $7.4 billion, 8.5% of midpoint\nQ4 2024: $7.2 billion to $7.8 billion, 8.0% of midpoint\nQ3 2024: $6.4 billion to $7.0 billion, 9.0% of midpoint\nQ2 2024: $5.4 billion to $6.0 billion, 10.5% of midpoint\n",
+          "passed": false,
+          "evidence": "The candidate does not contradict the reference ordering or content, but it does not present the exact 'Average size of AMD's guidance range' heading and includes extra source links. Since this is a contradiction check, the substantive figures are consistent, so there is no direct contradiction."
+        }
+      ]
+    }
+  ]
+}

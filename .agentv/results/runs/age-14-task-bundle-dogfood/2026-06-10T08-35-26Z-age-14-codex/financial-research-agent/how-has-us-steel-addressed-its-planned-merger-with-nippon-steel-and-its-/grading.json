@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion",
+      "passed": false,
+      "evidence": "The candidate says the merger agreement was signed in December 2023, but it does not state that Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion."
+    },
+    {
+      "text": "[criterion-2] U.S. Steel rejected the offer citing concerns about strategic fit and undervaluation",
+      "passed": false,
+      "evidence": "The candidate does not say U.S. Steel rejected the offer due to strategic fit and undervaluation. Instead, it describes the deal as a strategic operating partnership and later a finalized transaction."
+    },
+    {
+      "text": "[criterion-3] The merger was blocked by executive order",
+      "passed": false,
+      "evidence": "The candidate does not state that the merger was blocked by executive order; it says the transaction was finalized on June 18, 2025."
+    },
+    {
+      "text": "[criterion-4] The proposed merger between Nippon Steel and U.S. Steel occurred late in 2023.",
+      "passed": true,
+      "evidence": "The candidate explicitly states that the merger agreement was signed on December 18, 2023, which supports the late-2023 timing."
+    },
+    {
+      "text": "[criterion-5] The proposed merger between Nippon Steel and U.S. Steel occured late in 2023 when Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion. U.S. Steel rejected the offer, citing concerns about the strategic fit and the undervaluation of the company. Ultimately, the merger was blocked by executive order.",
+      "passed": false,
+      "evidence": "Because the candidate claims the transaction was finalized in 2025 and frames it as a partnership, it directly contradicts the reference summary that the deal was blocked by executive order."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 4,
+    "total": 5,
+    "pass_rate": 0.2
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.2,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion",
+          "passed": false,
+          "evidence": "The candidate says the merger agreement was signed in December 2023, but it does not state that Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion."
+        },
+        {
+          "text": "[criterion-2] U.S. Steel rejected the offer citing concerns about strategic fit and undervaluation",
+          "passed": false,
+          "evidence": "The candidate does not say U.S. Steel rejected the offer due to strategic fit and undervaluation. Instead, it describes the deal as a strategic operating partnership and later a finalized transaction."
+        },
+        {
+          "text": "[criterion-3] The merger was blocked by executive order",
+          "passed": false,
+          "evidence": "The candidate does not state that the merger was blocked by executive order; it says the transaction was finalized on June 18, 2025."
+        },
+        {
+          "text": "[criterion-4] The proposed merger between Nippon Steel and U.S. Steel occurred late in 2023.",
+          "passed": true,
+          "evidence": "The candidate explicitly states that the merger agreement was signed on December 18, 2023, which supports the late-2023 timing."
+        },
+        {
+          "text": "[criterion-5] The proposed merger between Nippon Steel and U.S. Steel occured late in 2023 when Nippon Steel made an unsolicited offer to acquire U.S. Steel for approximately $7.3 billion. U.S. Steel rejected the offer, citing concerns about the strategic fit and the undervaluation of the company. Ultimately, the merger was blocked by executive order.",
+          "passed": false,
+          "evidence": "Because the candidate claims the transaction was finalized in 2025 and frames it as a partnership, it directly contradicts the reference summary that the deal was blocked by executive order."
+        }
+      ]
+    }
+  ]
+}

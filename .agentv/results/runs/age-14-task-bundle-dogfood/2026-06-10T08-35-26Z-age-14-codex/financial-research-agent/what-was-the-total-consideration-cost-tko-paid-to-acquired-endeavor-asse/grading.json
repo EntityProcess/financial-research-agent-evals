@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] $3.25 Billion",
+      "passed": false,
+      "evidence": "The candidate states the total consideration was approximately $3.30 billion, not $3.25 billion, so it does not positively support the reference value."
+    },
+    {
+      "text": "[criterion-2] $3.25 Billion",
+      "passed": false,
+      "evidence": "The candidate explicitly gives a different total ($3.30 billion), which contradicts the criterion outcome of $3.25 billion."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 2,
+    "total": 2,
+    "pass_rate": 0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] $3.25 Billion",
+          "passed": false,
+          "evidence": "The candidate states the total consideration was approximately $3.30 billion, not $3.25 billion, so it does not positively support the reference value."
+        },
+        {
+          "text": "[criterion-2] $3.25 Billion",
+          "passed": false,
+          "evidence": "The candidate explicitly gives a different total ($3.30 billion), which contradicts the criterion outcome of $3.25 billion."
+        }
+      ]
+    }
+  ]
+}

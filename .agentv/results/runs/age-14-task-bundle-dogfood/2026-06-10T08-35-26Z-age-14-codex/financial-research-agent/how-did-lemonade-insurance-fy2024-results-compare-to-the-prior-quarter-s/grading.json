@@ -1,0 +1,107 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] In Force Premium (IFP): $944 Million, high end of guidance range",
+      "passed": true,
+      "evidence": "The candidate states IFP was $943.7m, within the $940-$944m guidance range and near the high end, which supports the $944m high-end outcome."
+    },
+    {
+      "text": "[criterion-2] Gross Earned Premium (GEP): $827 Million, above high end of guidance range",
+      "passed": true,
+      "evidence": "The candidate says gross earned premium was $827.3m, above the $823-$826m guidance range, consistent with $827m above the high end."
+    },
+    {
+      "text": "[criterion-3] Revenue: $526.5 Million, above high end of range",
+      "passed": true,
+      "evidence": "The candidate reports revenue of $526.5m and explicitly says it beat the high end of guidance."
+    },
+    {
+      "text": "[criterion-4] Adjusted EBITDA Loss: $(149.7) Million, above high end of range",
+      "passed": true,
+      "evidence": "The candidate reports adjusted EBITDA loss of $(149.7)m and says it was better than the high end of guidance, matching the reference."
+    },
+    {
+      "text": "[criterion-5] Stock-based Compensation: $64.5 Million, above the expected $64 Million",
+      "passed": true,
+      "evidence": "The candidate states stock-based compensation was $64.5m and slightly above the $64m expectation."
+    },
+    {
+      "text": "[criterion-6] Capital Expenditures: $9.4 Million, below the expected $10 million",
+      "passed": true,
+      "evidence": "The candidate states capex was $9.4m, slightly below the expected $10m."
+    },
+    {
+      "text": "[criterion-7] Weighted Common Shares: 71 Million, right on target",
+      "passed": false,
+      "evidence": "The candidate does not mention weighted common shares or the 71 million figure."
+    },
+    {
+      "text": "[criterion-8] In Force Premium (IFP): $944 Million, high end of guidance range\nGross Earned Premium (GEP): $827 Million, above high end of guidance range\nRevenue: $526.5 Million, above high end of range\nAdjusted EBITDA Loss: $(149.7) Million, above high end of range\nStock-based Compensation: $64.5 Million, above the expected $64 Million\nCapital Expenditures: $9.4 Million, below the expected $10 million\nWeighted Common Shares: 71 Million, right on target\n",
+      "passed": true,
+      "evidence": "The candidate does not contradict any of the listed reference outcomes; it is broadly aligned with them."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 1,
+    "total": 8,
+    "pass_rate": 0.875
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.875,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] In Force Premium (IFP): $944 Million, high end of guidance range",
+          "passed": true,
+          "evidence": "The candidate states IFP was $943.7m, within the $940-$944m guidance range and near the high end, which supports the $944m high-end outcome."
+        },
+        {
+          "text": "[criterion-2] Gross Earned Premium (GEP): $827 Million, above high end of guidance range",
+          "passed": true,
+          "evidence": "The candidate says gross earned premium was $827.3m, above the $823-$826m guidance range, consistent with $827m above the high end."
+        },
+        {
+          "text": "[criterion-3] Revenue: $526.5 Million, above high end of range",
+          "passed": true,
+          "evidence": "The candidate reports revenue of $526.5m and explicitly says it beat the high end of guidance."
+        },
+        {
+          "text": "[criterion-4] Adjusted EBITDA Loss: $(149.7) Million, above high end of range",
+          "passed": true,
+          "evidence": "The candidate reports adjusted EBITDA loss of $(149.7)m and says it was better than the high end of guidance, matching the reference."
+        },
+        {
+          "text": "[criterion-5] Stock-based Compensation: $64.5 Million, above the expected $64 Million",
+          "passed": true,
+          "evidence": "The candidate states stock-based compensation was $64.5m and slightly above the $64m expectation."
+        },
+        {
+          "text": "[criterion-6] Capital Expenditures: $9.4 Million, below the expected $10 million",
+          "passed": true,
+          "evidence": "The candidate states capex was $9.4m, slightly below the expected $10m."
+        },
+        {
+          "text": "[criterion-7] Weighted Common Shares: 71 Million, right on target",
+          "passed": false,
+          "evidence": "The candidate does not mention weighted common shares or the 71 million figure."
+        },
+        {
+          "text": "[criterion-8] In Force Premium (IFP): $944 Million, high end of guidance range\nGross Earned Premium (GEP): $827 Million, above high end of guidance range\nRevenue: $526.5 Million, above high end of range\nAdjusted EBITDA Loss: $(149.7) Million, above high end of range\nStock-based Compensation: $64.5 Million, above the expected $64 Million\nCapital Expenditures: $9.4 Million, below the expected $10 million\nWeighted Common Shares: 71 Million, right on target\n",
+          "passed": true,
+          "evidence": "The candidate does not contradict any of the listed reference outcomes; it is broadly aligned with them."
+        }
+      ]
+    }
+  ]
+}

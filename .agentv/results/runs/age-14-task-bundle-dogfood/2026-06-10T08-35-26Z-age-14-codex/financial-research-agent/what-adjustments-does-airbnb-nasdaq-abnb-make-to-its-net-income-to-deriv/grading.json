@@ -1,0 +1,107 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Provision for (benefit from) income taxes",
+      "passed": true,
+      "evidence": "Candidate explicitly lists 'Provision for income taxes,' matching the required adjustment."
+    },
+    {
+      "text": "[criterion-2] Other income (expense), net",
+      "passed": true,
+      "evidence": "Candidate includes 'Other expense, net,' which corresponds to 'Other income (expense), net' in the rubric."
+    },
+    {
+      "text": "[criterion-3] Interest income",
+      "passed": true,
+      "evidence": "Candidate explicitly lists 'Interest income.'"
+    },
+    {
+      "text": "[criterion-4] Depreciation and amortization",
+      "passed": true,
+      "evidence": "Candidate explicitly lists 'Depreciation and amortization.'"
+    },
+    {
+      "text": "[criterion-5] Stock-based compensation expense",
+      "passed": true,
+      "evidence": "Candidate explicitly lists 'Stock-based compensation expense.'"
+    },
+    {
+      "text": "[criterion-6] Acquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements",
+      "passed": true,
+      "evidence": "Candidate includes acquisition-related impacts from changes in fair value of contingent consideration, which matches the criterion."
+    },
+    {
+      "text": "[criterion-7] Lodging taxes, withholding taxes, and transactional taxes with significant uncertainty on application to platform",
+      "passed": true,
+      "evidence": "Candidate includes lodging taxes, host withholding taxes, and transactional taxes, which aligns with the required tax adjustments and does not contradict the uncertainty qualifier."
+    },
+    {
+      "text": "[criterion-8] Provision for (benefit from) income taxes;\nOther income (expense), net;\nInterest income;\nDepreciation and amortization;\nStock-based compensation expense;\nAcquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements, and\nLodging taxes, withholding taxes, and transactional taxes where there is significant uncertainty as to how the taxes apply to our platform.\n",
+      "passed": true,
+      "evidence": "The candidate does not contradict the reference list of adjustments; it is broadly consistent even with one extra item added."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Provision for (benefit from) income taxes",
+          "passed": true,
+          "evidence": "Candidate explicitly lists 'Provision for income taxes,' matching the required adjustment."
+        },
+        {
+          "text": "[criterion-2] Other income (expense), net",
+          "passed": true,
+          "evidence": "Candidate includes 'Other expense, net,' which corresponds to 'Other income (expense), net' in the rubric."
+        },
+        {
+          "text": "[criterion-3] Interest income",
+          "passed": true,
+          "evidence": "Candidate explicitly lists 'Interest income.'"
+        },
+        {
+          "text": "[criterion-4] Depreciation and amortization",
+          "passed": true,
+          "evidence": "Candidate explicitly lists 'Depreciation and amortization.'"
+        },
+        {
+          "text": "[criterion-5] Stock-based compensation expense",
+          "passed": true,
+          "evidence": "Candidate explicitly lists 'Stock-based compensation expense.'"
+        },
+        {
+          "text": "[criterion-6] Acquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements",
+          "passed": true,
+          "evidence": "Candidate includes acquisition-related impacts from changes in fair value of contingent consideration, which matches the criterion."
+        },
+        {
+          "text": "[criterion-7] Lodging taxes, withholding taxes, and transactional taxes with significant uncertainty on application to platform",
+          "passed": true,
+          "evidence": "Candidate includes lodging taxes, host withholding taxes, and transactional taxes, which aligns with the required tax adjustments and does not contradict the uncertainty qualifier."
+        },
+        {
+          "text": "[criterion-8] Provision for (benefit from) income taxes;\nOther income (expense), net;\nInterest income;\nDepreciation and amortization;\nStock-based compensation expense;\nAcquisition-related impacts consisting of gains (losses) recognized on changes in the fair value of contingent consideration arrangements, and\nLodging taxes, withholding taxes, and transactional taxes where there is significant uncertainty as to how the taxes apply to our platform.\n",
+          "passed": true,
+          "evidence": "The candidate does not contradict the reference list of adjustments; it is broadly consistent even with one extra item added."
+        }
+      ]
+    }
+  ]
+}

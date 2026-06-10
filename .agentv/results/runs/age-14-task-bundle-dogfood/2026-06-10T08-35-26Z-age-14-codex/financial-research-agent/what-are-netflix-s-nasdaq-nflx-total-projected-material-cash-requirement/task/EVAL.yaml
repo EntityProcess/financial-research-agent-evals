@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: what-are-netflix-s-nasdaq-nflx-total-projected-material-cash-requirement
+    metadata:
+      source_row: 28
+      question_type: Quantitative Retrieval
+      expert_time_mins: "10"
+    input: |
+      What are Netflix's (NASDAQ: NFLX) Total Projected Material Cash Requirements for 2025?
+    expected_output: |
+      $14,426,266,000
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: $14,426,266,000
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: $14,426,266,000
+            operator: contradiction
+            weight: 1
+            required: true

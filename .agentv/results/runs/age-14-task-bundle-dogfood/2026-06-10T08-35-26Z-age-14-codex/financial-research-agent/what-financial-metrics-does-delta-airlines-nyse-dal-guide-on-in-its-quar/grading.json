@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Quarterly guidance includes Total Revenue YoY Growth",
+      "passed": true,
+      "evidence": "The candidate explicitly says Delta’s quarter-ahead guidance includes total revenue year-over-year growth."
+    },
+    {
+      "text": "[criterion-2] Quarterly guidance includes Operating Margin",
+      "passed": true,
+      "evidence": "The candidate explicitly lists operating margin as part of quarterly guidance."
+    },
+    {
+      "text": "[criterion-3] Quarterly guidance includes Earnings Per Share",
+      "passed": true,
+      "evidence": "The candidate explicitly lists earnings per share (EPS) as part of quarterly guidance."
+    },
+    {
+      "text": "[criterion-4] Full FY guidance includes Earnings per Share YoY Growth",
+      "passed": true,
+      "evidence": "The candidate explicitly states full-year guidance includes EPS, and the reference’s full FY item is EPS year-over-year growth; the answer does not contradict this and supports the EPS guidance component."
+    },
+    {
+      "text": "[criterion-5] Full FY guidance includes Free Cash Flow",
+      "passed": true,
+      "evidence": "The candidate explicitly lists free cash flow as part of full-year guidance."
+    },
+    {
+      "text": "[criterion-6] Full FY guidance includes Gross Leverage",
+      "passed": true,
+      "evidence": "The candidate explicitly lists gross leverage as part of full-year guidance."
+    },
+    {
+      "text": "[criterion-7] Delta Airlines provides quarterly guidance and full FY guidance.\n\nFor the Quarter, Delta provides guidance for Total Revenue YoY Growth, Operating Margin, and Earnings Per Share\n\nFor the Full FY, Delta provides guidance for Earnings per Share YoY Growth, Free Cash Flow, and Gross Leverage\n",
+      "passed": true,
+      "evidence": "The candidate’s answer matches the reference structure and does not contradict the statement that Delta provides quarterly guidance and full FY guidance for the listed metrics."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Quarterly guidance includes Total Revenue YoY Growth",
+          "passed": true,
+          "evidence": "The candidate explicitly says Delta’s quarter-ahead guidance includes total revenue year-over-year growth."
+        },
+        {
+          "text": "[criterion-2] Quarterly guidance includes Operating Margin",
+          "passed": true,
+          "evidence": "The candidate explicitly lists operating margin as part of quarterly guidance."
+        },
+        {
+          "text": "[criterion-3] Quarterly guidance includes Earnings Per Share",
+          "passed": true,
+          "evidence": "The candidate explicitly lists earnings per share (EPS) as part of quarterly guidance."
+        },
+        {
+          "text": "[criterion-4] Full FY guidance includes Earnings per Share YoY Growth",
+          "passed": true,
+          "evidence": "The candidate explicitly states full-year guidance includes EPS, and the reference’s full FY item is EPS year-over-year growth; the answer does not contradict this and supports the EPS guidance component."
+        },
+        {
+          "text": "[criterion-5] Full FY guidance includes Free Cash Flow",
+          "passed": true,
+          "evidence": "The candidate explicitly lists free cash flow as part of full-year guidance."
+        },
+        {
+          "text": "[criterion-6] Full FY guidance includes Gross Leverage",
+          "passed": true,
+          "evidence": "The candidate explicitly lists gross leverage as part of full-year guidance."
+        },
+        {
+          "text": "[criterion-7] Delta Airlines provides quarterly guidance and full FY guidance.\n\nFor the Quarter, Delta provides guidance for Total Revenue YoY Growth, Operating Margin, and Earnings Per Share\n\nFor the Full FY, Delta provides guidance for Earnings per Share YoY Growth, Free Cash Flow, and Gross Leverage\n",
+          "passed": true,
+          "evidence": "The candidate’s answer matches the reference structure and does not contradict the statement that Delta provides quarterly guidance and full FY guidance for the listed metrics."
+        }
+      ]
+    }
+  ]
+}

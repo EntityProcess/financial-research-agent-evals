@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: how-many-basis-points-did-mu-beat-or-miss-its-q3-2024-gaap-gross-margin-
+    metadata:
+      source_row: 9
+      question_type: Beat or Miss
+      expert_time_mins: "10"
+    input: |
+      How many basis points did MU beat or miss its Q3 2024 GAAP gross margin guidance?
+    expected_output: |
+      140bps BEAT
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 140 basis points beat on Q3 2024 GAAP gross margin guidance
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 140bps BEAT
+            operator: contradiction
+            weight: 1
+            required: true

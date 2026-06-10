@@ -1,0 +1,13 @@
+@[assistant]:
+U.S. Steel has treated the Nippon Steel deal as a strategic operating partnership, not just a sale.
+
+Key facts:
+
+- The merger agreement was signed on December 18, 2023; U.S. Steel would survive as a wholly owned subsidiary of Nippon Steel North America. SEC filing: [8-K](https://www.sec.gov/Archives/edgar/data/1163302/000110465925057073/tm2517314d1_8k.htm).
+- While the deal was pending, U.S. Steel disclosed that the merger agreement required it to operate “in the ordinary course of business” and limited actions outside the ordinary course without purchaser consent. Source: [Q1 2025 10-Q](https://www.sec.gov/Archives/edgar/data/1163302/000116330225000030/x-20250331.htm).
+- It also warned the transaction could hurt its ability to retain customers and key personnel and maintain supplier, employee, stockholder and other business relationships, and could affect operating results. Source: [Nippon/U.S. Steel closing release](https://www.nipponsteel.com/common/secure/en/news/20250618_100.pdf).
+- The transaction was finalized on June 18, 2025. U.S. Steel said it would retain its name and Pittsburgh headquarters and continue to be “Mined, Melted, and Made in America.” Source: [closing release](https://www.nipponsteel.com/common/secure/en/news/20250618_100.pdf).
+- Under the national security agreement, Nippon Steel committed about $11 billion of new U.S. Steel investment by 2028; U.S. Steel must remain U.S.-incorporated, keep Pittsburgh HQ, have U.S.-citizen key management, maintain U.S. production capacity, and preserve ability to pursue U.S. trade actions. The U.S. government received a Golden Share with consent rights over matters such as reduced investment, name/HQ changes, job or production transfers abroad, and certain plant closures/idling.
+- Operationally, U.S. Steel later framed the partnership as a growth and efficiency program: about $14 billion of U.S. growth capital targeted, roughly $3 billion of value potential, including about $2.5 billion of incremental run-rate EBITDA from capital investments and about $500 million from operational efficiencies, plus 200+ efficiency initiatives across segments. Source: [U.S. Steel Nov. 4, 2025 release](https://www.ussteel.com/media/newsroom/-/blogs/u-s-steel-unveils-new-era-of-growth).
+
+Bottom line: pending the merger, U.S. Steel said normal operations continued but were contractually constrained and exposed to retention/relationship risks. After closing, it presented the deal as preserving U.S. operations while adding Nippon Steel capital, technology, and operating-efficiency initiatives.

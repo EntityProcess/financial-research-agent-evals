@@ -1,0 +1,56 @@
+execution:
+  target: codex
+tests:
+  - id: approximate-zillow-s-free-cash-flow-as-cfo-capex-what-is-the-trend-of-fc
+    metadata:
+      source_row: 14
+      question_type: Trends
+      expert_time_mins: "15"
+    input: |
+      Approximate Zillow's Free Cash Flow as CFO - Capex. What is the trend of FCF margin over the last 3 years?
+    expected_output: |
+      2024: 12.7%
+      2023: 11.3%
+      2022: 24.8%
+
+      FCF margin has declined substantially since 2022 and seems to have settled into a new normal of low teens percent.
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "2024 FCF margin: 12.7%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "2023 FCF margin: 11.3%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "2022 FCF margin: 24.8%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: FCF margin has declined substantially since 2022
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: FCF margin settled into low teens percent in 2023 and 2024
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: |
+              2024: 12.7%
+              2023: 11.3%
+              2022: 24.8%
+
+              FCF margin has declined substantially since 2022 and seems to have settled into a new normal of low teens percent.
+            operator: contradiction
+            weight: 1
+            required: true

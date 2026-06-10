@@ -1,0 +1,4 @@
+@[assistant]:
+TJX **beat** Q4 FY2025 pre-tax margin guidance by **70 bps**.
+
+Calculation: actual Q4 FY2025 pretax profit margin **11.6%** vs. guidance high end **10.9%** = **+0.7 percentage points**, or **+70 bps**. TJX also stated it was “above the high-end of its plan by 0.7 percentage points.” Sources: TJX Q3 FY25 outlook and TJX Q4 FY25 results. ([businesswire.com](https://www.businesswire.com/news/home/20241119733451/en/The-TJX-Companies-Inc.-Reports-Q3-FY25-Results-Comp-Store-Sales-Growth-of-3-at-High-End-of-Plan-Pretax-Profit-Margin-of-12.3-and-Diluted-EPS-of-%241.14-Both-Well-Above-Plan-Raises-FY25-Pretax-Profit-Margin-and-EPS-Guidance)) ([investor.tjx.com](https://investor.tjx.com/news-releases/news-release-details/tjx-companies-inc-reports-q4-and-fy25-results-q4-comp-store))

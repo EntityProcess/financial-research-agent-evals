@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: when-is-production-expected-to-begin-in-j-m-smucker-s-nyse-sjm-new-distr
+    metadata:
+      source_row: 23
+      question_type: Qualitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      When is production expected to begin in J M Smucker's (NYSE: SJM) new distribution center in McCalla, Alabama?
+    expected_output: |
+      Production expected to begin in 2025
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Production expected to begin in 2025
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Production expected to begin in 2025
+            operator: contradiction
+            weight: 1
+            required: true

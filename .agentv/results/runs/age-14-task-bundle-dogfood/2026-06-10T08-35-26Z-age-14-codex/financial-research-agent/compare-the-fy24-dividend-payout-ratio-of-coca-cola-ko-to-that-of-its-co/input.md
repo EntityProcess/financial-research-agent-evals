@@ -1,0 +1,2 @@
+@[user]:
+Compare the FY24 dividend payout ratio of Coca-Cola (KO) to that of its competitors and rank in order from highest to lowest.

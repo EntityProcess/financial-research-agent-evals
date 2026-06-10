@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Class A: 432,876,657 shares",
+      "passed": false,
+      "evidence": "Candidate gives Class A as 417,930,233 shares, which does not match the required 432,876,657 shares."
+    },
+    {
+      "text": "[criterion-2] Class B: 188,462,942 shares",
+      "passed": false,
+      "evidence": "Candidate gives Class B as 175,574,690 shares, which does not match the required 188,462,942 shares."
+    },
+    {
+      "text": "[criterion-3] Class C: 0",
+      "passed": true,
+      "evidence": "Candidate states Class C: 0 shares, which supports the criterion that Class C is 0."
+    },
+    {
+      "text": "[criterion-4] Class H: 9,200,000 shares",
+      "passed": true,
+      "evidence": "Candidate states Class H: 9,200,000 shares, matching the required value."
+    },
+    {
+      "text": "[criterion-5] Common shares outstanding\nClass A: 432,876,657 shares\nClass B: 188,462,942 shares\nClass C: 0\nClass H: 9,200,000 shares\n",
+      "passed": false,
+      "evidence": "The candidate directly provides a different set of outstanding share counts for Class A and Class B, contradicting the full reference answer."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 3,
+    "total": 5,
+    "pass_rate": 0.4
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.4,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Class A: 432,876,657 shares",
+          "passed": false,
+          "evidence": "Candidate gives Class A as 417,930,233 shares, which does not match the required 432,876,657 shares."
+        },
+        {
+          "text": "[criterion-2] Class B: 188,462,942 shares",
+          "passed": false,
+          "evidence": "Candidate gives Class B as 175,574,690 shares, which does not match the required 188,462,942 shares."
+        },
+        {
+          "text": "[criterion-3] Class C: 0",
+          "passed": true,
+          "evidence": "Candidate states Class C: 0 shares, which supports the criterion that Class C is 0."
+        },
+        {
+          "text": "[criterion-4] Class H: 9,200,000 shares",
+          "passed": true,
+          "evidence": "Candidate states Class H: 9,200,000 shares, matching the required value."
+        },
+        {
+          "text": "[criterion-5] Common shares outstanding\nClass A: 432,876,657 shares\nClass B: 188,462,942 shares\nClass C: 0\nClass H: 9,200,000 shares\n",
+          "passed": false,
+          "evidence": "The candidate directly provides a different set of outstanding share counts for Class A and Class B, contradicting the full reference answer."
+        }
+      ]
+    }
+  ]
+}

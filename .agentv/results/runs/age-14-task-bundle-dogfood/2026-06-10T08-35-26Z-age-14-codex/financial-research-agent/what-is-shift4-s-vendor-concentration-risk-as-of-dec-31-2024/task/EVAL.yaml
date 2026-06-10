@@ -1,0 +1,32 @@
+execution:
+  target: codex
+tests:
+  - id: what-is-shift4-s-vendor-concentration-risk-as-of-dec-31-2024
+    metadata:
+      source_row: 21
+      question_type: Qualitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      What is Shift4's vendor concentration risk as of Dec 31, 2024?
+    expected_output: |
+      The Company’s merchant processing activity in North America is facilitated by one vendor. The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Shift4's merchant processing activity in North America is facilitated by one vendor.
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: The Company’s merchant processing activity in North America is facilitated by one vendor. The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.
+            operator: contradiction
+            weight: 1
+            required: true

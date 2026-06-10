@@ -1,0 +1,53 @@
+execution:
+  target: codex
+tests:
+  - id: of-amzn-meta-or-goog-who-plans-to-spend-the-most-in-capex-in-2025
+    metadata:
+      source_row: 6
+      question_type: Complex Retrieval
+      expert_time_mins: "20"
+    input: |
+      Of AMZN, META, or GOOG, who plans to spend the most in capex in 2025?
+    expected_output: |
+      FY 2025 capital expenditure guidance
+      AMZN: $105.2 billion (management guided 2025 = Q4 2024 run-rate)
+      GOOG: $75.0 billion
+      META: $62.5 billion (at midpoint)
+
+      AMZN plans to spend the most on capital expenditures in 2025.
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "AMZN FY 2025 capital expenditure guidance: $105.2 billion"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "GOOG FY 2025 capital expenditure guidance: $75.0 billion"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "META FY 2025 capital expenditure guidance: $62.5 billion"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: AMZN plans to spend the most on capital expenditures in 2025
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: |
+              FY 2025 capital expenditure guidance
+              AMZN: $105.2 billion (management guided 2025 = Q4 2024 run-rate)
+              GOOG: $75.0 billion
+              META: $62.5 billion (at midpoint)
+
+              AMZN plans to spend the most on capital expenditures in 2025.
+            operator: contradiction
+            weight: 1
+            required: true

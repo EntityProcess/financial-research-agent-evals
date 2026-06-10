@@ -1,0 +1,87 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Q1 2024: $2,861 million (1.9% BEAT)",
+      "passed": false,
+      "evidence": "Candidate gives Q1 2026 instead of Q1 2024 and a different dollar/% figure, so it does not support the required outcome."
+    },
+    {
+      "text": "[criterion-2] Q2 2024: $3,101 million (2.6% BEAT)",
+      "passed": false,
+      "evidence": "Candidate gives Q4 2025 instead of Q2 2024 and a different dollar/% figure, so it does not support the required outcome."
+    },
+    {
+      "text": "[criterion-3] Q3 2024: $3,657 million (2.0% BEAT)",
+      "passed": false,
+      "evidence": "Candidate gives Q3 2025 instead of Q3 2024 and a different dollar/% figure, so it does not support the required outcome."
+    },
+    {
+      "text": "[criterion-4] Q4 2024: $4,140 million (2.2% BEAT)",
+      "passed": false,
+      "evidence": "Candidate gives Q2 2025 instead of Q4 2024 and a different dollar/% figure, so it does not support the required outcome."
+    },
+    {
+      "text": "[criterion-5] Average beat of 2.2% over the last 4 quarters",
+      "passed": false,
+      "evidence": "Candidate states an average 7.0% beat, which conflicts with the required 2.2% average beat."
+    },
+    {
+      "text": "[criterion-6] Non-GAAP gross profit\nQ1 2024: $2,861 million (1.9% BEAT)\nQ2 2024: $3,101 million (2.6% BEAT)\nQ3 2024: $3,657 million (2.0% BEAT)\nQ4 2024: $4,140 million (2.2% BEAT)\n\nOn average, AMD has beaten its gross profit guidance by 2.2% over the last 4 quarters.\n",
+      "passed": false,
+      "evidence": "The candidate explicitly contradicts the reference answer by providing a different set of quarters and results, so it is not compatible with the target answer."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 6,
+    "total": 6,
+    "pass_rate": 0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Q1 2024: $2,861 million (1.9% BEAT)",
+          "passed": false,
+          "evidence": "Candidate gives Q1 2026 instead of Q1 2024 and a different dollar/% figure, so it does not support the required outcome."
+        },
+        {
+          "text": "[criterion-2] Q2 2024: $3,101 million (2.6% BEAT)",
+          "passed": false,
+          "evidence": "Candidate gives Q4 2025 instead of Q2 2024 and a different dollar/% figure, so it does not support the required outcome."
+        },
+        {
+          "text": "[criterion-3] Q3 2024: $3,657 million (2.0% BEAT)",
+          "passed": false,
+          "evidence": "Candidate gives Q3 2025 instead of Q3 2024 and a different dollar/% figure, so it does not support the required outcome."
+        },
+        {
+          "text": "[criterion-4] Q4 2024: $4,140 million (2.2% BEAT)",
+          "passed": false,
+          "evidence": "Candidate gives Q2 2025 instead of Q4 2024 and a different dollar/% figure, so it does not support the required outcome."
+        },
+        {
+          "text": "[criterion-5] Average beat of 2.2% over the last 4 quarters",
+          "passed": false,
+          "evidence": "Candidate states an average 7.0% beat, which conflicts with the required 2.2% average beat."
+        },
+        {
+          "text": "[criterion-6] Non-GAAP gross profit\nQ1 2024: $2,861 million (1.9% BEAT)\nQ2 2024: $3,101 million (2.6% BEAT)\nQ3 2024: $3,657 million (2.0% BEAT)\nQ4 2024: $4,140 million (2.2% BEAT)\n\nOn average, AMD has beaten its gross profit guidance by 2.2% over the last 4 quarters.\n",
+          "passed": false,
+          "evidence": "The candidate explicitly contradicts the reference answer by providing a different set of quarters and results, so it is not compatible with the target answer."
+        }
+      ]
+    }
+  ]
+}

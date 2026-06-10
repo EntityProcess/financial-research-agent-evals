@@ -1,0 +1,2 @@
+@[user]:
+What is the maximum dilutive impact in number of shares of Snapchat's outstanding convertible notes as of 12/31/2024?

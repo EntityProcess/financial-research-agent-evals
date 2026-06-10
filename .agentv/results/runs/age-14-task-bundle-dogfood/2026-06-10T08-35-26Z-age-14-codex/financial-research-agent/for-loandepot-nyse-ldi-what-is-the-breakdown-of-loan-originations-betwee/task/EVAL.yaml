@@ -1,0 +1,37 @@
+execution:
+  target: codex
+tests:
+  - id: for-loandepot-nyse-ldi-what-is-the-breakdown-of-loan-originations-betwee
+    metadata:
+      source_row: 32
+      question_type: Quantitative Retrieval
+      expert_time_mins: "3"
+    input: |
+      For loanDepot (NYSE: LDI) what is the breakdown of loan originations between purchases and refinancings for the last 9 months as of 11/12/2024?
+    expected_output: |
+      Purchase: $12,057,993
+      Refinance: $5,250,321
+      In thousands
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "Purchase loan originations: $12,057,993 in thousands"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Refinance loan originations: $5,250,321 in thousands"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: |
+              Purchase: $12,057,993
+              Refinance: $5,250,321
+              In thousands
+            operator: contradiction
+            weight: 1
+            required: true

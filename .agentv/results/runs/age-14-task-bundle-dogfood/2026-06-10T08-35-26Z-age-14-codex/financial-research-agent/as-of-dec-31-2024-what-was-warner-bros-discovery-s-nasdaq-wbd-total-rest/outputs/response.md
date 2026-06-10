@@ -1,0 +1,4 @@
+@[assistant]:
+As of **December 31, 2024**, Warner Bros. Discovery had incurred **$4.7 billion** of expected **pre-tax restructuring charges** related to its 2022 WarnerMedia merger.
+
+Source: WBD’s 2024 Form 10-K says the merger-related restructuring framework included content programming assessments, organization restructuring, facility consolidation, and contract termination costs, and that it had “incurred **$4.7 billion** as of December 31, 2024.” It also says the merger-related program was substantially completed by year-end 2024. [SEC 2024 Form 10-K](https://www.sec.gov/Archives/edgar/data/1437107/000143710725000031/wbd-20241231.htm)

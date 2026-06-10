@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: as-of-march-10-2025-what-is-the-face-value-of-salesforce-s-debt-excludin
+    metadata:
+      source_row: 24
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      As of March 10, 2025, what is the face value of Salesforce's debt excluding their sustainability notes?
+    expected_output: |
+      $7.5 Billion
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025
+            operator: contradiction
+            weight: 1
+            required: true

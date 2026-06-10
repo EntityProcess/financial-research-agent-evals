@@ -1,0 +1,82 @@
+execution:
+  target: codex
+tests:
+  - id: how-has-netflix-s-nasdaq-nflx-average-revenue-per-paying-user-changed-fr
+    metadata:
+      source_row: 2
+      question_type: Trends
+      expert_time_mins: "15"
+    input: |
+      How has Netflix's (NASDAQ: NFLX) Average Revenue Per Paying User Changed from 2019 to 2024?
+    expected_output: |
+      2019: 10.82
+      2020: 10.91
+      2021: 11.67
+      2022: 11.76
+      2023: 11.64
+      2024: 11.70
+
+      From 2019-2022, average revenue per paying membership increased approximately 2.8% annually. From 2022 to 2024, the average revenue per paying membership has been roughly flat, likely due to the introduction of lower priced ad plans
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "2019: 10.82"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "2020: 10.91"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "2021: 11.67"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: "2022: 11.76"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: "2023: 11.64"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: "2024: 11.70"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: From 2019-2022, average revenue per paying membership increased approximately 2.8% annually
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-8
+            outcome: From 2022 to 2024, the average revenue per paying membership has been roughly flat
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-9
+            outcome: Flat revenue from 2022 to 2024 likely due to introduction of lower priced ad plans
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-10
+            outcome: |
+              2019: 10.82
+              2020: 10.91
+              2021: 11.67
+              2022: 11.76
+              2023: 11.64
+              2024: 11.70
+
+              From 2019-2022, average revenue per paying membership increased approximately 2.8% annually. From 2022 to 2024, the average revenue per paying membership has been roughly flat, likely due to the introduction of lower priced ad plans
+            operator: contradiction
+            weight: 1
+            required: true

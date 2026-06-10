@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.",
+      "passed": true,
+      "evidence": "The candidate states Microsoft had 228,000 full-time employees and 102,000 internationally, then calculates 102,000 / 228,000 = 44.7%, which supports the target 45% figure."
+    },
+    {
+      "text": "[criterion-2] 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.",
+      "passed": true,
+      "evidence": "The candidate does not contradict the criterion; its calculation and conclusion are consistent with 45% (102,000/228,000) outside the U.S."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.",
+          "passed": true,
+          "evidence": "The candidate states Microsoft had 228,000 full-time employees and 102,000 internationally, then calculates 102,000 / 228,000 = 44.7%, which supports the target 45% figure."
+        },
+        {
+          "text": "[criterion-2] 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.",
+          "passed": true,
+          "evidence": "The candidate does not contradict the criterion; its calculation and conclusion are consistent with 45% (102,000/228,000) outside the U.S."
+        }
+      ]
+    }
+  ]
+}

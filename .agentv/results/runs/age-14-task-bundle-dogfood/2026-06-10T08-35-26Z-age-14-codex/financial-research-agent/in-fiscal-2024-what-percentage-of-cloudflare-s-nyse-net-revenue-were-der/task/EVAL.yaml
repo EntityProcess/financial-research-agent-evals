@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: in-fiscal-2024-what-percentage-of-cloudflare-s-nyse-net-revenue-were-der
+    metadata:
+      source_row: 34
+      question_type: Quantitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      In fiscal 2024, what percentage of Cloudflare's (NYSE: NET) revenue were derived from channel partners?
+    expected_output: |
+      Channel Partners - 20%
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 20% of customers were derived from channel partners
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 20% of customers were derived from channel partners
+            operator: contradiction
+            weight: 1
+            required: true

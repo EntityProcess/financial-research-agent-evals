@@ -1,0 +1,66 @@
+execution:
+  target: codex
+tests:
+  - id: in-fy23-and-fy24-did-general-mills-beat-or-miss-beginning-of-year-organi
+    metadata:
+      source_row: 49
+      question_type: Beat or Miss
+      expert_time_mins: "25"
+    input: |
+      In FY23 and FY24, did General Mills beat or miss beginning of year organic net sales growth guidance? What is the guidance for FY25?
+    expected_output: |
+      FY23 Guidance: 4-5% organic net sales growth (subsequently raised to 10% mid-year)
+      FY24 Guidance: 3-4% organic net sales growth
+
+      FY23 Actual: 10% organic net sales growth (Beat)
+      FY24 Actual: -1% organic net sales growth (Miss)
+
+      2025 Guidance: Organic net sales expected to be flat to up 1%
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "FY23 Guidance: 4-5% organic net sales growth (raised to 10% mid-year)"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "FY24 Guidance: 3-4% organic net sales growth"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "FY23 Actual: 10% organic net sales growth (Beat)"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: "FY24 Actual: -1% organic net sales growth (Miss)"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: "FY23: Beat guidance after raising to 10%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: "FY24: Missed guidance"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: "2025 Guidance: Organic net sales expected to be flat to up 1%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-8
+            outcome: |
+              FY23 Guidance: 4-5% (raised to 10%) vs Actual: 10% → Beat
+              FY24 Guidance: 3-4% vs Actual: -1% → Miss
+              FY25 Guidance: Organic net sales flat to up 1%
+            operator: contradiction
+            weight: 1
+            required: true

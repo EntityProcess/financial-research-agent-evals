@@ -1,0 +1,117 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Thomas Carley",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Thomas J. Carley as a nominee."
+    },
+    {
+      "text": "[criterion-2] Joseph Clabby",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Joseph S. Clabby as a nominee."
+    },
+    {
+      "text": "[criterion-3] Thomas Cusick",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Thomas B. Cusick as a nominee."
+    },
+    {
+      "text": "[criterion-4] Gary Kramer",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Gary E. Kramer as a nominee."
+    },
+    {
+      "text": "[criterion-5] Anthony Meeker",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Anthony Meeker as a nominee."
+    },
+    {
+      "text": "[criterion-6] Carla Moradi",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Carla A. Moradi as a nominee."
+    },
+    {
+      "text": "[criterion-7] Alexandra Morehouse",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Alexandra Morehouse as a nominee."
+    },
+    {
+      "text": "[criterion-8] Vincent Price",
+      "passed": true,
+      "evidence": "The candidate explicitly lists Vincent P. Price as a nominee."
+    },
+    {
+      "text": "[criterion-9] Thomas Carley\nJoseph Clabby\nThomas Cusick\nGary Kramer\nAnthony Meeker\nCarla Moradi\nAlexandra Morehouse\nVincent Price\n",
+      "passed": true,
+      "evidence": "The candidate’s full nominee list matches the reference set and does not contradict it."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Thomas Carley",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Thomas J. Carley as a nominee."
+        },
+        {
+          "text": "[criterion-2] Joseph Clabby",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Joseph S. Clabby as a nominee."
+        },
+        {
+          "text": "[criterion-3] Thomas Cusick",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Thomas B. Cusick as a nominee."
+        },
+        {
+          "text": "[criterion-4] Gary Kramer",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Gary E. Kramer as a nominee."
+        },
+        {
+          "text": "[criterion-5] Anthony Meeker",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Anthony Meeker as a nominee."
+        },
+        {
+          "text": "[criterion-6] Carla Moradi",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Carla A. Moradi as a nominee."
+        },
+        {
+          "text": "[criterion-7] Alexandra Morehouse",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Alexandra Morehouse as a nominee."
+        },
+        {
+          "text": "[criterion-8] Vincent Price",
+          "passed": true,
+          "evidence": "The candidate explicitly lists Vincent P. Price as a nominee."
+        },
+        {
+          "text": "[criterion-9] Thomas Carley\nJoseph Clabby\nThomas Cusick\nGary Kramer\nAnthony Meeker\nCarla Moradi\nAlexandra Morehouse\nVincent Price\n",
+          "passed": true,
+          "evidence": "The candidate’s full nominee list matches the reference set and does not contradict it."
+        }
+      ]
+    }
+  ]
+}

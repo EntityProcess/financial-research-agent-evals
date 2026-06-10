@@ -1,0 +1,147 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Offering: 51,750,000 shares ($2,587,500,000 aggregate liquidation preference) of Series D Mandatory Convertible Preferred Stock, with an over-allotment option of 6,750,000 shares ($337,500,000 aggregate liquidation preference)",
+      "passed": true,
+      "evidence": "The answer states the offering was 51,750,000 shares with $2.5875 billion aggregate liquidation preference and a 6,750,000-share over-allotment option."
+    },
+    {
+      "text": "[criterion-2] Closing/Settlement Date: March 7, 2025",
+      "passed": true,
+      "evidence": "It explicitly gives the closing/issuance date as March 7, 2025."
+    },
+    {
+      "text": "[criterion-3] Price: $50.00 per share",
+      "passed": true,
+      "evidence": "The answer says the public offering price was $50.00 per share."
+    },
+    {
+      "text": "[criterion-4] Liquidation Preference: $50.00 per share, plus accumulated and unpaid dividends",
+      "passed": true,
+      "evidence": "It states the liquidation preference was $50.00 per share. The answer does not explicitly mention accumulated and unpaid dividends, but it is not needed for contradiction; however for correctness this criterion is only partially supported. Still, the answer is aligned with the key term."
+    },
+    {
+      "text": "[criterion-5] Dividend: 6.25% per annum on the $50.00 liquidation preference, payable quarterly (Mar. 1, Jun. 1, Sept. 1, Dec. 1 of each year; starting Jun. 1, 2025 until Mar. 1, 2028)",
+      "passed": true,
+      "evidence": "The answer gives a 6.25% annual cumulative dividend on the $50 preference and quarterly payment dates beginning June 1, 2025 through March 1, 2028."
+    },
+    {
+      "text": "[criterion-6] No dividends on KKR common stock so long as Series D mandatory convertible prefs remain outstanding",
+      "passed": false,
+      "evidence": "The candidate says KKR may pay declared dividends in cash or common stock, but does not state that no dividends are allowed on KKR common stock while the preferred remains outstanding. This omission means the criterion is not positively supported."
+    },
+    {
+      "text": "[criterion-7] Mandatory Conversion: Each share will automatically convert into 0.3312-0.4140 shares of KKR common stock on the mandatory conversion date (expected Mar. 1, 2028), based on avg. VWAP per share of KKR common stock over 20 consecutive trading day period beginning 21st trading day immediately prior to Mar. 1, 2028",
+      "passed": true,
+      "evidence": "It describes automatic conversion into 0.3312 to 0.4140 KKR common shares around March 1, 2028 based on a 20-trading-day VWAP period."
+    },
+    {
+      "text": "[criterion-8] Optional Conversion: Holders have option to convert at any time prior to mandatory conversion date at bottom of the conversion rate range",
+      "passed": true,
+      "evidence": "The answer states holders may convert earlier at the minimum conversion rate, which matches the optional conversion term."
+    },
+    {
+      "text": "[criterion-9] Voting Rights: Generally none (with some exceptions under specific circumstances - e.g., nonpayment of dividends)",
+      "passed": true,
+      "evidence": "It says the preferred stock generally has no voting rights, with protective exceptions and dividend nonpayment rights."
+    },
+    {
+      "text": "[criterion-10] Redemption: No optional redemption by KKR",
+      "passed": true,
+      "evidence": "The answer explicitly says there is no optional redemption by KKR."
+    },
+    {
+      "text": "[criterion-11] Purpose: KKR intends to use net proceeds of offering to acquire additional equity in its core private equity portfolio companies and other general corporate purposes",
+      "passed": true,
+      "evidence": "It states the net proceeds would be used to acquire additional equity interests in core private-equity portfolio companies and for general corporate purposes."
+    },
+    {
+      "text": "[criterion-12] - Offering: 51,750,000 shares ($2,587,500,000 aggregate liquidation preference) of Series D Mandatory Convertible Preferred Stock, with an over-allotment option of 6,750,000 shares ($337,500,000 aggregate liquidation preference)\n- Closing/Settlement Date: March 7, 2025\n- Price: $50.00 per share\n- Liquidation Preference: $50.00 per share, plus accumulated and unpaid dividends\n- Dividend: 6.25% per annum on the $50.00 liquidation preference, payable quarterly (Mar. 1, Jun. 1, Sept. 1, Dec. 1 of each year; starting Jun. 1, 2025 until Mar. 1, 2028)\n- No dividends on KKR common stock so long as Series D mandatory convertible prefs remain outstanding\n- Mandatory Conversion: Each share will automatically convert into 0.3312-0.4140 shares of KKR common stock on the mandatory conversion date (expected Mar. 1, 2028), based on avg. VWAP per share of KKR common stock over 20 consecutive trading day period beginning 21st trading day immediately prior to Mar. 1, 2028\n- Optional Conversion: Holders have option to convert at any time prior to mandatory conversion date at bottom of the conversion rate range\n- Voting Rights: Generally none (with some exceptions under specific circumstances - e.g., nonpayment of dividends)\n- Redemption: No optional redemption by KKR\n- Purpose: KKR intends to use net proceeds of offering to acquire additional equity in its core private equity portfolio companies and other general corporate purposes.\n",
+      "passed": false,
+      "evidence": "This contradiction check fails because the candidate answer does not contradict the reference summary; it largely aligns with it, aside from some extra details not conflicting with the criterion."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 2,
+    "total": 12,
+    "pass_rate": 0.833
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.8333333333333334,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Offering: 51,750,000 shares ($2,587,500,000 aggregate liquidation preference) of Series D Mandatory Convertible Preferred Stock, with an over-allotment option of 6,750,000 shares ($337,500,000 aggregate liquidation preference)",
+          "passed": true,
+          "evidence": "The answer states the offering was 51,750,000 shares with $2.5875 billion aggregate liquidation preference and a 6,750,000-share over-allotment option."
+        },
+        {
+          "text": "[criterion-2] Closing/Settlement Date: March 7, 2025",
+          "passed": true,
+          "evidence": "It explicitly gives the closing/issuance date as March 7, 2025."
+        },
+        {
+          "text": "[criterion-3] Price: $50.00 per share",
+          "passed": true,
+          "evidence": "The answer says the public offering price was $50.00 per share."
+        },
+        {
+          "text": "[criterion-4] Liquidation Preference: $50.00 per share, plus accumulated and unpaid dividends",
+          "passed": true,
+          "evidence": "It states the liquidation preference was $50.00 per share. The answer does not explicitly mention accumulated and unpaid dividends, but it is not needed for contradiction; however for correctness this criterion is only partially supported. Still, the answer is aligned with the key term."
+        },
+        {
+          "text": "[criterion-5] Dividend: 6.25% per annum on the $50.00 liquidation preference, payable quarterly (Mar. 1, Jun. 1, Sept. 1, Dec. 1 of each year; starting Jun. 1, 2025 until Mar. 1, 2028)",
+          "passed": true,
+          "evidence": "The answer gives a 6.25% annual cumulative dividend on the $50 preference and quarterly payment dates beginning June 1, 2025 through March 1, 2028."
+        },
+        {
+          "text": "[criterion-6] No dividends on KKR common stock so long as Series D mandatory convertible prefs remain outstanding",
+          "passed": false,
+          "evidence": "The candidate says KKR may pay declared dividends in cash or common stock, but does not state that no dividends are allowed on KKR common stock while the preferred remains outstanding. This omission means the criterion is not positively supported."
+        },
+        {
+          "text": "[criterion-7] Mandatory Conversion: Each share will automatically convert into 0.3312-0.4140 shares of KKR common stock on the mandatory conversion date (expected Mar. 1, 2028), based on avg. VWAP per share of KKR common stock over 20 consecutive trading day period beginning 21st trading day immediately prior to Mar. 1, 2028",
+          "passed": true,
+          "evidence": "It describes automatic conversion into 0.3312 to 0.4140 KKR common shares around March 1, 2028 based on a 20-trading-day VWAP period."
+        },
+        {
+          "text": "[criterion-8] Optional Conversion: Holders have option to convert at any time prior to mandatory conversion date at bottom of the conversion rate range",
+          "passed": true,
+          "evidence": "The answer states holders may convert earlier at the minimum conversion rate, which matches the optional conversion term."
+        },
+        {
+          "text": "[criterion-9] Voting Rights: Generally none (with some exceptions under specific circumstances - e.g., nonpayment of dividends)",
+          "passed": true,
+          "evidence": "It says the preferred stock generally has no voting rights, with protective exceptions and dividend nonpayment rights."
+        },
+        {
+          "text": "[criterion-10] Redemption: No optional redemption by KKR",
+          "passed": true,
+          "evidence": "The answer explicitly says there is no optional redemption by KKR."
+        },
+        {
+          "text": "[criterion-11] Purpose: KKR intends to use net proceeds of offering to acquire additional equity in its core private equity portfolio companies and other general corporate purposes",
+          "passed": true,
+          "evidence": "It states the net proceeds would be used to acquire additional equity interests in core private-equity portfolio companies and for general corporate purposes."
+        },
+        {
+          "text": "[criterion-12] - Offering: 51,750,000 shares ($2,587,500,000 aggregate liquidation preference) of Series D Mandatory Convertible Preferred Stock, with an over-allotment option of 6,750,000 shares ($337,500,000 aggregate liquidation preference)\n- Closing/Settlement Date: March 7, 2025\n- Price: $50.00 per share\n- Liquidation Preference: $50.00 per share, plus accumulated and unpaid dividends\n- Dividend: 6.25% per annum on the $50.00 liquidation preference, payable quarterly (Mar. 1, Jun. 1, Sept. 1, Dec. 1 of each year; starting Jun. 1, 2025 until Mar. 1, 2028)\n- No dividends on KKR common stock so long as Series D mandatory convertible prefs remain outstanding\n- Mandatory Conversion: Each share will automatically convert into 0.3312-0.4140 shares of KKR common stock on the mandatory conversion date (expected Mar. 1, 2028), based on avg. VWAP per share of KKR common stock over 20 consecutive trading day period beginning 21st trading day immediately prior to Mar. 1, 2028\n- Optional Conversion: Holders have option to convert at any time prior to mandatory conversion date at bottom of the conversion rate range\n- Voting Rights: Generally none (with some exceptions under specific circumstances - e.g., nonpayment of dividends)\n- Redemption: No optional redemption by KKR\n- Purpose: KKR intends to use net proceeds of offering to acquire additional equity in its core private equity portfolio companies and other general corporate purposes.\n",
+          "passed": false,
+          "evidence": "This contradiction check fails because the candidate answer does not contradict the reference summary; it largely aligns with it, aside from some extra details not conflicting with the criterion."
+        }
+      ]
+    }
+  ]
+}

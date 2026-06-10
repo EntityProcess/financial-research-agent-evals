@@ -1,0 +1,2 @@
+@[user]:
+In fiscal 2024, what percentage of Cloudflare's (NYSE: NET) revenue were derived from channel partners?

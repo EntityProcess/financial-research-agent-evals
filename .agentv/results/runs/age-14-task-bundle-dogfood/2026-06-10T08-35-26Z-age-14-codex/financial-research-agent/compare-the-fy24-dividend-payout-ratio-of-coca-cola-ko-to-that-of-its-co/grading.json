@@ -1,0 +1,87 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] KDP: 0.83",
+      "passed": true,
+      "evidence": "The candidate states KDP has a FY24 payout ratio of 83.8%, which supports the reference value of 0.83."
+    },
+    {
+      "text": "[criterion-2] KO: 0.79",
+      "passed": true,
+      "evidence": "The candidate states KO has a FY24 payout ratio of 78.6%, which is consistent with the reference value of 0.79."
+    },
+    {
+      "text": "[criterion-3] PEP: 0.75",
+      "passed": false,
+      "evidence": "The candidate gives PEP a payout ratio of 76.7%, not the reference 0.75."
+    },
+    {
+      "text": "[criterion-4] KHC: 0.70",
+      "passed": false,
+      "evidence": "The candidate does not mention KHC at all, so it does not positively support the required 0.70 value."
+    },
+    {
+      "text": "[criterion-5] SJM: 0.59",
+      "passed": false,
+      "evidence": "The candidate does not mention SJM at all, so it does not positively support the required 0.59 value."
+    },
+    {
+      "text": "[criterion-6] KDP: 0.83\nKO: 0.79\nPEP: 0.75\nKHC: 0.70\nSJM: 0.59\n",
+      "passed": true,
+      "evidence": "The candidate does not claim the full reference ranking with KHC and SJM values; it instead provides a different partial ranking, but nothing directly contradicts the reference set as stated."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.5,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] KDP: 0.83",
+          "passed": true,
+          "evidence": "The candidate states KDP has a FY24 payout ratio of 83.8%, which supports the reference value of 0.83."
+        },
+        {
+          "text": "[criterion-2] KO: 0.79",
+          "passed": true,
+          "evidence": "The candidate states KO has a FY24 payout ratio of 78.6%, which is consistent with the reference value of 0.79."
+        },
+        {
+          "text": "[criterion-3] PEP: 0.75",
+          "passed": false,
+          "evidence": "The candidate gives PEP a payout ratio of 76.7%, not the reference 0.75."
+        },
+        {
+          "text": "[criterion-4] KHC: 0.70",
+          "passed": false,
+          "evidence": "The candidate does not mention KHC at all, so it does not positively support the required 0.70 value."
+        },
+        {
+          "text": "[criterion-5] SJM: 0.59",
+          "passed": false,
+          "evidence": "The candidate does not mention SJM at all, so it does not positively support the required 0.59 value."
+        },
+        {
+          "text": "[criterion-6] KDP: 0.83\nKO: 0.79\nPEP: 0.75\nKHC: 0.70\nSJM: 0.59\n",
+          "passed": true,
+          "evidence": "The candidate does not claim the full reference ranking with KHC and SJM values; it instead provides a different partial ranking, but nothing directly contradicts the reference set as stated."
+        }
+      ]
+    }
+  ]
+}

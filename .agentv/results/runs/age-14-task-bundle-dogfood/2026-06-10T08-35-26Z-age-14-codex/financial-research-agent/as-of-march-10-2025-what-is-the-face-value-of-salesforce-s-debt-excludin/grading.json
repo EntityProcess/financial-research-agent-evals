@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025",
+      "passed": true,
+      "evidence": "The candidate explicitly states that Salesforce’s debt face value excluding sustainability notes was $7.5 billion, matching the reference answer and criterion."
+    },
+    {
+      "text": "[criterion-2] Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025",
+      "passed": true,
+      "evidence": "The candidate does not contradict the $7.5 billion figure; it directly supports it."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025",
+          "passed": true,
+          "evidence": "The candidate explicitly states that Salesforce’s debt face value excluding sustainability notes was $7.5 billion, matching the reference answer and criterion."
+        },
+        {
+          "text": "[criterion-2] Salesforce's debt excluding sustainability notes is $7.5 billion as of March 10, 2025",
+          "passed": true,
+          "evidence": "The candidate does not contradict the $7.5 billion figure; it directly supports it."
+        }
+      ]
+    }
+  ]
+}

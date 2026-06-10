@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: in-2024-what-was-the-average-nights-per-booking-for-airbnb-nasdaq-abnb-i
+    metadata:
+      source_row: 44
+      question_type: Quantitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      In 2024, what was the Average Nights per Booking for Airbnb (NASDAQ: ABNB) in the Asia Pacific region?
+    expected_output: |
+      Asia Pacific - 3.3 Nights per Booking
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Asia Pacific - 3.3 Nights per Booking
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Asia Pacific - 3.3 Nights per Booking
+            operator: contradiction
+            weight: 1
+            required: true

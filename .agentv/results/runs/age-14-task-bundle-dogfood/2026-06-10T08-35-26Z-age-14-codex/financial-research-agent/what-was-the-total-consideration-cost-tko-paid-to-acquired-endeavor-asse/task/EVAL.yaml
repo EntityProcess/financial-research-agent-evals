@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: what-was-the-total-consideration-cost-tko-paid-to-acquired-endeavor-asse
+    metadata:
+      source_row: 8
+      question_type: Quantitative Retrieval
+      expert_time_mins: "2"
+    input: |
+      What was the total consideration cost TKO paid to acquired Endeavor assets measured at transaction close?
+    expected_output: |
+      $3.25 Billion
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: $3.25 Billion
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: $3.25 Billion
+            operator: contradiction
+            weight: 1
+            required: true

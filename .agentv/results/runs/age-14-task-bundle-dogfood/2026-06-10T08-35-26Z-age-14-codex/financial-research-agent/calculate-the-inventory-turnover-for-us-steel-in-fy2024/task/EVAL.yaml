@@ -1,0 +1,42 @@
+execution:
+  target: codex
+tests:
+  - id: calculate-the-inventory-turnover-for-us-steel-in-fy2024
+    metadata:
+      source_row: 15
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      Calculate the inventory turnover for US Steel in FY2024.
+    expected_output: |
+      CoS: $14,060
+      Avg. Inventory: $2,148
+      Inventory Turnover = 6.55
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "CoS: $14,060"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Avg. Inventory: $2,148"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: Inventory Turnover = 6.55
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: |
+              CoS: $14,060
+              Avg. Inventory: $2,148
+              Inventory Turnover = 6.55
+            operator: contradiction
+            weight: 1
+            required: true

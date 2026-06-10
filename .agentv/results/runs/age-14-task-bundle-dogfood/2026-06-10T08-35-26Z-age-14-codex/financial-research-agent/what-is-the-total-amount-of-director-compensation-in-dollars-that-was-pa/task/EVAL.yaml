@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: what-is-the-total-amount-of-director-compensation-in-dollars-that-was-pa
+    metadata:
+      source_row: 13
+      question_type: Numerical Reasoning
+      expert_time_mins: "10"
+    input: |
+      What is the total amount of director compensation (in dollars) that was paid to the directors of 3D Systems in 2023?
+    expected_output: |
+      $2,263,113
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: The total amount of directors compensations paid by 3D Systems in 2023 was $2,263,113.
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: The total amount of directors compensations paid by 3D Systems in 2023 was $2,263,113.
+            operator: contradiction
+            weight: 1
+            required: true

@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "eval_file": "/home/entity/projects/EntityProcess/financial-research-agent/evals/financial-research-agent.eval.yaml",
+    "timestamp": "2026-06-10T08:36:30.759Z",
+    "targets": [
+      "codex"
+    ],
+    "tests_run": [
+      "approximate-zillow-s-free-cash-flow-as-cfo-capex-what-is-the-trend-of-fc",
+      "as-of-dec-31-2024-what-was-warner-bros-discovery-s-nasdaq-wbd-total-rest",
+      "as-of-december-2024-what-has-been-zillow-s-nasdaq-z-acquisition-strategy",
+      "as-of-fy-2024-what-are-the-terms-of-the-junior-subordinated-debentures-i",
+      "as-of-june-30-2024-what-of-microsoft-s-nasdaq-msft-full-time-employees-a",
+      "as-of-march-10-2025-what-is-the-face-value-of-salesforce-s-debt-excludin",
+      "assume-bros-grows-revenue-by-30-cagr-and-gross-margins-compress-by-500bp",
+      "by-how-much-did-amd-beat-miss-its-non-gaap-gross-profit-guide-implied-by",
+      "calculate-the-3-year-revenue-cagr-for-palantir-technologies-from-2021-to",
+      "calculate-the-inventory-turnover-for-us-steel-in-fy2024",
+      "compare-the-fy24-dividend-payout-ratio-of-coca-cola-ko-to-that-of-its-co",
+      "did-four-beat-or-miss-its-end-to-end-payment-volume-guidance-at-midpoint",
+      "did-tjx-beat-or-miss-its-q4-fy-2025-pre-tax-margin-guidance-express-resu",
+      "does-workday-nasdaq-wday-report-a-gross-or-net-retention-metric-in-its-a",
+      "february-financials-for-tsm-have-been-released-as-of-march-10-2025-assum",
+      "for-loandepot-nyse-ldi-what-is-the-breakdown-of-loan-originations-betwee",
+      "for-the-fiscal-year-ended-12-31-2023-what-was-uber-s-nyse-uber-largest-a",
+      "how-did-lemonade-insurance-fy2024-results-compare-to-the-prior-quarter-s",
+      "how-did-lyft-s-q4-24-adjusted-ebitda-margin-adjusted-ebitda-gross-bookin",
+      "how-has-airbnb-s-annual-take-rate-revenue-gross-booking-value-trended-fr",
+      "how-has-netflix-s-nasdaq-nflx-average-revenue-per-paying-user-changed-fr",
+      "how-has-us-steel-addressed-its-planned-merger-with-nippon-steel-and-its-",
+      "how-large-was-the-range-in-terms-for-amd-s-revenue-guidance-for-q2-2024-",
+      "how-many-basis-points-did-mu-beat-or-miss-its-q3-2024-gaap-gross-margin-",
+      "how-many-common-stock-shares-are-outstanding-for-abnb-format-class-x-x-s",
+      "in-2024-what-was-airbnb-s-nasdaq-abnb-adjustment-for-stock-based-compens",
+      "in-2024-what-was-the-average-nights-per-booking-for-airbnb-nasdaq-abnb-i",
+      "in-2024-who-was-nominated-to-serve-on-bbsi-s-nasdaq-bbsi-board-of-direct",
+      "in-fiscal-2024-what-percentage-of-cloudflare-s-nyse-net-revenue-were-der",
+      "in-fy23-and-fy24-did-general-mills-beat-or-miss-beginning-of-year-organi",
+      "list-the-operating-kpis-spirit-airlines-nyse-save-tracked-in-fy-2024-pro",
+      "of-amzn-meta-or-goog-who-plans-to-spend-the-most-in-capex-in-2025",
+      "summarize-the-key-terms-of-the-series-d-mandatory-convertible-preferred-",
+      "summarize-the-regulatory-risks-paylocity-s-nasdaq-pcty-lists-in-its-fy-2",
+      "what-adjustments-does-airbnb-nasdaq-abnb-make-to-its-net-income-to-deriv",
+      "what-are-netflix-s-nasdaq-nflx-total-projected-material-cash-requirement",
+      "what-financial-metrics-does-delta-airlines-nyse-dal-guide-on-in-its-quar",
+      "what-is-shift4-s-vendor-concentration-risk-as-of-dec-31-2024",
+      "what-is-the-maximum-dilutive-impact-in-number-of-shares-of-snapchat-s-ou",
+      "what-is-the-total-amount-of-director-compensation-in-dollars-that-was-pa",
+      "what-is-the-total-value-of-msci-s-operating-leases-in-s-thousands-that-a",
+      "what-portion-of-uber-s-2024-revenue-growth-was-driven-by-take-rate-expan",
+      "what-price-was-rdfn-acquired-at-include-price-per-share-equity-value-and",
+      "what-was-abnb-s-gross-booking-per-room-night-gross-booking-value-divided",
+      "what-was-fnd-same-store-sales-growth-in-q4-2024",
+      "what-was-orcl-s-effective-tax-rate-for-the-fiscal-year-ended-5-31-2024-a",
+      "what-was-the-total-consideration-cost-tko-paid-to-acquired-endeavor-asse",
+      "what-would-be-the-impact-to-net-income-in-dollars-and-percent-if-all-deb",
+      "when-is-production-expected-to-begin-in-j-m-smucker-s-nyse-sjm-new-distr",
+      "who-is-the-current-cfo-of-airbnb-nasdaq-abnb"
+    ],
+    "experiment": "age-14-task-bundle-dogfood",
+    "planned_test_count": 50
+  },
+  "run_summary": {
+    "codex": {
+      "pass_rate": {
+        "mean": 0.72,
+        "stddev": 0.449
+      },
+      "time_seconds": {
+        "mean": 81.695,
+        "stddev": 74.97
+      },
+      "tokens": {
+        "mean": 57056.4,
+        "stddev": 66199.8
+      }
+    }
+  },
+  "per_grader_summary": {
+    "dexter-rubric:llm-grader": {
+      "mean": 0.813,
+      "stddev": 0.313
+    }
+  },
+  "notes": []
+}

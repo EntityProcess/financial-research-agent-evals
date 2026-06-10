@@ -1,0 +1,51 @@
+execution:
+  target: codex
+tests:
+  - id: how-many-common-stock-shares-are-outstanding-for-abnb-format-class-x-x-s
+    metadata:
+      source_row: 11
+      question_type: Quantitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      How many common stock shares are outstanding for ABNB? Format "Class X: X shares" add line break.
+    expected_output: |
+      Common shares outstanding
+      Class A: 432,876,657 shares
+      Class B: 188,462,942 shares
+      Class C: 0
+      Class H: 9,200,000 shares
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "Class A: 432,876,657 shares"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Class B: 188,462,942 shares"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "Class C: 0"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: "Class H: 9,200,000 shares"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: |
+              Common shares outstanding
+              Class A: 432,876,657 shares
+              Class B: 188,462,942 shares
+              Class C: 0
+              Class H: 9,200,000 shares
+            operator: contradiction
+            weight: 1
+            required: true

@@ -1,0 +1,197 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Average aircraft: 209.9",
+      "passed": true,
+      "evidence": "Candidate lists 'Average aircraft | 209.9', matching the criterion."
+    },
+    {
+      "text": "[criterion-2] Aircraft at end of period: 213",
+      "passed": true,
+      "evidence": "Candidate lists 'Aircraft at end of period | 213', matching the criterion."
+    },
+    {
+      "text": "[criterion-3] Average daily aircraft utilization (hours): 9.9",
+      "passed": true,
+      "evidence": "Candidate lists 'Average daily aircraft utilization | 9.9 hours', matching the criterion."
+    },
+    {
+      "text": "[criterion-4] Departures: 288,180",
+      "passed": true,
+      "evidence": "Candidate lists 'Departures | 288,180', matching the criterion."
+    },
+    {
+      "text": "[criterion-5] Passenger flight segments (PFSs): 44,180,000",
+      "passed": true,
+      "evidence": "Candidate lists 'Passenger flight segments (PFSs) | 44.180 million', which corresponds to 44,180,000."
+    },
+    {
+      "text": "[criterion-6] Revenue passenger miles (RPMs): 43,671,009,000",
+      "passed": true,
+      "evidence": "Candidate lists 'Revenue passenger miles (RPMs) | 43,671.009 million', corresponding to 43,671,009,000."
+    },
+    {
+      "text": "[criterion-7] Available seat miles (ASMs): 53,017,948,000",
+      "passed": true,
+      "evidence": "Candidate lists 'Available seat miles (ASMs) | 53,017.948 million', corresponding to 53,017,948,000."
+    },
+    {
+      "text": "[criterion-8] Load factor: 0.824",
+      "passed": true,
+      "evidence": "Candidate lists 'Load factor | 82.4%', which is equivalent to 0.824."
+    },
+    {
+      "text": "[criterion-9] Total revenue per passenger flight segment: $111.21",
+      "passed": true,
+      "evidence": "Candidate lists 'Total revenue per passenger flight segment | $111.21', matching the criterion."
+    },
+    {
+      "text": "[criterion-10] Average yield: $0.1125",
+      "passed": true,
+      "evidence": "Candidate lists 'Average yield | 11.25 cents', equivalent to $0.1125."
+    },
+    {
+      "text": "[criterion-11] TRASM: $0.0927",
+      "passed": true,
+      "evidence": "Candidate lists 'TRASM | 9.27 cents', equivalent to $0.0927."
+    },
+    {
+      "text": "[criterion-12] CASM: $0.1135",
+      "passed": true,
+      "evidence": "Candidate lists 'CASM | 11.35 cents', equivalent to $0.1135."
+    },
+    {
+      "text": "[criterion-13] Adjusted CASM: $0.1076",
+      "passed": true,
+      "evidence": "Candidate lists 'Adjusted CASM | 10.76 cents', equivalent to $0.1076."
+    },
+    {
+      "text": "[criterion-14] Adjusted CASM ex-fuel: $0.0797",
+      "passed": true,
+      "evidence": "Candidate lists 'Adjusted CASM ex-fuel | 7.97 cents', equivalent to $0.0797."
+    },
+    {
+      "text": "[criterion-15] Fuel gallons consumed: 551,819,000",
+      "passed": true,
+      "evidence": "Candidate lists 'Fuel gallons consumed | 551.819 million', corresponding to 551,819,000."
+    },
+    {
+      "text": "[criterion-16] Average fuel cost per gallon: $2.68",
+      "passed": true,
+      "evidence": "Candidate lists 'Average fuel cost per gallon | $2.68', matching the criterion."
+    },
+    {
+      "text": "[criterion-17] Average aircraft: 209.9\nAircraft at end of period: 213\nAverage daily aircraft utilization (hours): 9.9\nDepartures: 288,180\nPassenger flight segments (PFSs): 44,180,000\nRevenue passenger miles (RPMs): 43,671,009,000\nAvailable seat miles (ASMs) : 53,017,948,000\nLoad factor: 0.824\nTotal revenue per passenger flight segment: $111.21\nAverage yield: $0.1125\nTRASM: $0.0927\nCASM: $0.1135\nAdjusted CASM: $0.1076\nAdjusted CASM ex-fuel: $0.0797\nFuel gallons consumed: 551,819,000\nAverage fuel cost per gallon: $2.68\n",
+      "passed": true,
+      "evidence": "Candidate answer does not contradict the full set of reference operating KPI values; it aligns with them."
+    }
+  ],
+  "summary": {
+    "passed": 17,
+    "failed": 0,
+    "total": 17,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Average aircraft: 209.9",
+          "passed": true,
+          "evidence": "Candidate lists 'Average aircraft | 209.9', matching the criterion."
+        },
+        {
+          "text": "[criterion-2] Aircraft at end of period: 213",
+          "passed": true,
+          "evidence": "Candidate lists 'Aircraft at end of period | 213', matching the criterion."
+        },
+        {
+          "text": "[criterion-3] Average daily aircraft utilization (hours): 9.9",
+          "passed": true,
+          "evidence": "Candidate lists 'Average daily aircraft utilization | 9.9 hours', matching the criterion."
+        },
+        {
+          "text": "[criterion-4] Departures: 288,180",
+          "passed": true,
+          "evidence": "Candidate lists 'Departures | 288,180', matching the criterion."
+        },
+        {
+          "text": "[criterion-5] Passenger flight segments (PFSs): 44,180,000",
+          "passed": true,
+          "evidence": "Candidate lists 'Passenger flight segments (PFSs) | 44.180 million', which corresponds to 44,180,000."
+        },
+        {
+          "text": "[criterion-6] Revenue passenger miles (RPMs): 43,671,009,000",
+          "passed": true,
+          "evidence": "Candidate lists 'Revenue passenger miles (RPMs) | 43,671.009 million', corresponding to 43,671,009,000."
+        },
+        {
+          "text": "[criterion-7] Available seat miles (ASMs): 53,017,948,000",
+          "passed": true,
+          "evidence": "Candidate lists 'Available seat miles (ASMs) | 53,017.948 million', corresponding to 53,017,948,000."
+        },
+        {
+          "text": "[criterion-8] Load factor: 0.824",
+          "passed": true,
+          "evidence": "Candidate lists 'Load factor | 82.4%', which is equivalent to 0.824."
+        },
+        {
+          "text": "[criterion-9] Total revenue per passenger flight segment: $111.21",
+          "passed": true,
+          "evidence": "Candidate lists 'Total revenue per passenger flight segment | $111.21', matching the criterion."
+        },
+        {
+          "text": "[criterion-10] Average yield: $0.1125",
+          "passed": true,
+          "evidence": "Candidate lists 'Average yield | 11.25 cents', equivalent to $0.1125."
+        },
+        {
+          "text": "[criterion-11] TRASM: $0.0927",
+          "passed": true,
+          "evidence": "Candidate lists 'TRASM | 9.27 cents', equivalent to $0.0927."
+        },
+        {
+          "text": "[criterion-12] CASM: $0.1135",
+          "passed": true,
+          "evidence": "Candidate lists 'CASM | 11.35 cents', equivalent to $0.1135."
+        },
+        {
+          "text": "[criterion-13] Adjusted CASM: $0.1076",
+          "passed": true,
+          "evidence": "Candidate lists 'Adjusted CASM | 10.76 cents', equivalent to $0.1076."
+        },
+        {
+          "text": "[criterion-14] Adjusted CASM ex-fuel: $0.0797",
+          "passed": true,
+          "evidence": "Candidate lists 'Adjusted CASM ex-fuel | 7.97 cents', equivalent to $0.0797."
+        },
+        {
+          "text": "[criterion-15] Fuel gallons consumed: 551,819,000",
+          "passed": true,
+          "evidence": "Candidate lists 'Fuel gallons consumed | 551.819 million', corresponding to 551,819,000."
+        },
+        {
+          "text": "[criterion-16] Average fuel cost per gallon: $2.68",
+          "passed": true,
+          "evidence": "Candidate lists 'Average fuel cost per gallon | $2.68', matching the criterion."
+        },
+        {
+          "text": "[criterion-17] Average aircraft: 209.9\nAircraft at end of period: 213\nAverage daily aircraft utilization (hours): 9.9\nDepartures: 288,180\nPassenger flight segments (PFSs): 44,180,000\nRevenue passenger miles (RPMs): 43,671,009,000\nAvailable seat miles (ASMs) : 53,017,948,000\nLoad factor: 0.824\nTotal revenue per passenger flight segment: $111.21\nAverage yield: $0.1125\nTRASM: $0.0927\nCASM: $0.1135\nAdjusted CASM: $0.1076\nAdjusted CASM ex-fuel: $0.0797\nFuel gallons consumed: 551,819,000\nAverage fuel cost per gallon: $2.68\n",
+          "passed": true,
+          "evidence": "Candidate answer does not contradict the full set of reference operating KPI values; it aligns with them."
+        }
+      ]
+    }
+  ]
+}

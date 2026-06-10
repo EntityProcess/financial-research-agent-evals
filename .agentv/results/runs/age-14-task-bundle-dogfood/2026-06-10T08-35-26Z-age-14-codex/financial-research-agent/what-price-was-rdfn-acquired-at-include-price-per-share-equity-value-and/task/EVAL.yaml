@@ -1,0 +1,37 @@
+execution:
+  target: codex
+tests:
+  - id: what-price-was-rdfn-acquired-at-include-price-per-share-equity-value-and
+    metadata:
+      source_row: 36
+      question_type: Quantitative Retrieval
+      expert_time_mins: "2"
+    input: |
+      What price was RDFN acquired at? (include price per share, equity value and enterprise value)
+    expected_output: |
+      0.7926 shares of Rocket Companies class A stock per share of Redfin, which represents an equity value of $1.75 billion, and a total enterprise value of $2.4 billion at $12.50 per share
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 0.7926 shares of Rocket Companies class A stock per share of Redfin
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: equity value of $1.75 billion
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: enterprise value of $2.4 billion
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: 0.7926 shares of Rocket Companies class A stock per share of Redfin, which represents an equity value of $1.75 billion, and a total enterprise value of $2.4 billion at $12.50 per share
+            operator: contradiction
+            weight: 1
+            required: true

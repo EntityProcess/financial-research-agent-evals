@@ -1,0 +1,44 @@
+execution:
+  target: codex
+tests:
+  - id: calculate-the-3-year-revenue-cagr-for-palantir-technologies-from-2021-to
+    metadata:
+      source_row: 10
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      Calculate the 3 year revenue CAGR for Palantir Technologies from 2021 to 2024.
+    expected_output: |
+      2024: 2,865,507
+      2021: 1,541,889
+
+      CAGR: 22.9%
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "2024 revenue: 2,865,507"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "2021 revenue: 1,541,889"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "3 year revenue CAGR: 22.9%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: |
+              2024: 2,865,507
+              2021: 1,541,889
+
+              CAGR: 22.9%
+            operator: contradiction
+            weight: 1
+            required: true

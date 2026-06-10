@@ -1,0 +1,70 @@
+execution:
+  target: codex
+tests:
+  - id: how-did-lemonade-insurance-fy2024-results-compare-to-the-prior-quarter-s
+    metadata:
+      source_row: 48
+      question_type: Beat or Miss
+      expert_time_mins: "30"
+    input: |
+      How did Lemonade Insurance FY2024 results compare to the prior quarter's full year guidance?
+    expected_output: |
+      In Force Premium (IFP): $944 Million, high end of guidance range
+      Gross Earned Premium (GEP): $827 Million, above high end of guidance range
+      Revenue: $526.5 Million, above high end of range
+      Adjusted EBITDA Loss: $(149.7) Million, above high end of range
+      Stock-based Compensation: $64.5 Million, above the expected $64 Million
+      Capital Expenditures: $9.4 Million, below the expected $10 million
+      Weighted Common Shares: 71 Million, right on target
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "In Force Premium (IFP): $944 Million, high end of guidance range"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Gross Earned Premium (GEP): $827 Million, above high end of guidance range"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "Revenue: $526.5 Million, above high end of range"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: "Adjusted EBITDA Loss: $(149.7) Million, above high end of range"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: "Stock-based Compensation: $64.5 Million, above the expected $64 Million"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: "Capital Expenditures: $9.4 Million, below the expected $10 million"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: "Weighted Common Shares: 71 Million, right on target"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-8
+            outcome: |
+              In Force Premium (IFP): $944 Million, high end of guidance range
+              Gross Earned Premium (GEP): $827 Million, above high end of guidance range
+              Revenue: $526.5 Million, above high end of range
+              Adjusted EBITDA Loss: $(149.7) Million, above high end of range
+              Stock-based Compensation: $64.5 Million, above the expected $64 Million
+              Capital Expenditures: $9.4 Million, below the expected $10 million
+              Weighted Common Shares: 71 Million, right on target
+            operator: contradiction
+            weight: 1
+            required: true

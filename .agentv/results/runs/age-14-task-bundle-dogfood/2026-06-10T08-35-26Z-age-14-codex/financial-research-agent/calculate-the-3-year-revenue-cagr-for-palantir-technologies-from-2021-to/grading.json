@@ -1,0 +1,67 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 2024 revenue: 2,865,507",
+      "passed": true,
+      "evidence": "The candidate explicitly states 2021 revenue was $1.541889 billion, equivalent to 1,541,889 thousand."
+    },
+    {
+      "text": "[criterion-2] 2021 revenue: 1,541,889",
+      "passed": true,
+      "evidence": "The candidate explicitly states 2024 revenue was $2.865507 billion, equivalent to 2,865,507 thousand."
+    },
+    {
+      "text": "[criterion-3] 3 year revenue CAGR: 22.9%",
+      "passed": true,
+      "evidence": "The candidate calculates the 3-year CAGR as 22.95% and summarizes it as approximately 23.0%, matching 22.9% within rounding."
+    },
+    {
+      "text": "[criterion-4] 2024: 2,865,507\n2021: 1,541,889\n\nCAGR: 22.9%\n",
+      "passed": true,
+      "evidence": "The candidate's figures and conclusion are consistent with the reference values and do not contradict them."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] 2024 revenue: 2,865,507",
+          "passed": true,
+          "evidence": "The candidate explicitly states 2021 revenue was $1.541889 billion, equivalent to 1,541,889 thousand."
+        },
+        {
+          "text": "[criterion-2] 2021 revenue: 1,541,889",
+          "passed": true,
+          "evidence": "The candidate explicitly states 2024 revenue was $2.865507 billion, equivalent to 2,865,507 thousand."
+        },
+        {
+          "text": "[criterion-3] 3 year revenue CAGR: 22.9%",
+          "passed": true,
+          "evidence": "The candidate calculates the 3-year CAGR as 22.95% and summarizes it as approximately 23.0%, matching 22.9% within rounding."
+        },
+        {
+          "text": "[criterion-4] 2024: 2,865,507\n2021: 1,541,889\n\nCAGR: 22.9%\n",
+          "passed": true,
+          "evidence": "The candidate's figures and conclusion are consistent with the reference values and do not contradict them."
+        }
+      ]
+    }
+  ]
+}

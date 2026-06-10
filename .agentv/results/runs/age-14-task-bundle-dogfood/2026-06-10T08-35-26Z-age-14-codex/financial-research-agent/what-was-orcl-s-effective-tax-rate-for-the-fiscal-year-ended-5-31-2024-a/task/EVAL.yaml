@@ -1,0 +1,44 @@
+execution:
+  target: codex
+tests:
+  - id: what-was-orcl-s-effective-tax-rate-for-the-fiscal-year-ended-5-31-2024-a
+    metadata:
+      source_row: 20
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      What was ORCL's effective tax rate for the fiscal year ended 5/31/2024 and how did it change vs. the prior year? Each section represents a KPI. Format the change as: "Delta: XXXbps"
+    expected_output: |
+      Effective Tax Rate
+      2023: 6.8%
+      2024: 10.9%
+      Delta: increased 410bps
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "Effective Tax Rate 2023: 6.8%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Effective Tax Rate 2024: 10.9%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "Delta: increased 410bps"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: |
+              Effective Tax Rate
+              2023: 6.8%
+              2024: 10.9%
+              Delta: increased 410bps
+            operator: contradiction
+            weight: 1
+            required: true

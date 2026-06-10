@@ -1,0 +1,28 @@
+execution:
+  target: codex
+tests:
+  - id: as-of-june-30-2024-what-of-microsoft-s-nasdaq-msft-full-time-employees-a
+    metadata:
+      source_row: 26
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      As of June 30, 2024, what % of Microsoft's (NASDAQ: MSFT) full-time employees are located outside of the United States? (give the numbers that led to the percentage calculation)
+    expected_output: |
+      45%
+      (102,000/228,000)
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 45% (102,000/228,000) of Microsoft's full-time employees are located outside of the United States as of June 30, 2024.
+            operator: contradiction
+            weight: 1
+            required: true

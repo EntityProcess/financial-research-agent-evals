@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: for-the-fiscal-year-ended-12-31-2023-what-was-uber-s-nyse-uber-largest-a
+    metadata:
+      source_row: 35
+      question_type: Adjustments
+      expert_time_mins: "10"
+    input: |
+      For the fiscal year ended 12/31/2023, what was Uber's (NYSE: UBER) largest adjustment to EBITDA. Provide the line item and amount in billions of dollars.
+    expected_output: |
+      Stock-Based Compensation Expense: $1.935B
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "Stock-Based Compensation Expense: $1.935B"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Stock-Based Compensation Expense: $1.935B"
+            operator: contradiction
+            weight: 1
+            required: true

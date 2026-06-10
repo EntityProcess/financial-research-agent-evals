@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: in-2024-what-was-airbnb-s-nasdaq-abnb-adjustment-for-stock-based-compens
+    metadata:
+      source_row: 45
+      question_type: Adjustments
+      expert_time_mins: "10"
+    input: |
+      In 2024, what was Airbnb's (NASDAQ: ABNB) adjustment for Stock-based Compensation Expense?
+    expected_output: |
+      In 2024, Airbnb adjusted its EBITDA by $1,407,000,000 to exclude stock-based compensation expense
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: In 2024, Airbnb adjusted its EBITDA by $1,407,000,000 to exclude stock-based compensation expense
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: In 2024, Airbnb adjusted its EBITDA by $1,407,000,000 to exclude stock-based compensation expense
+            operator: contradiction
+            weight: 1
+            required: true

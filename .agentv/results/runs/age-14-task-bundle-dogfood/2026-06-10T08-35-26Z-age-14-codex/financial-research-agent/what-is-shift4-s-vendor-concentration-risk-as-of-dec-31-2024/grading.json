@@ -1,0 +1,57 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Shift4's merchant processing activity in North America is facilitated by one vendor.",
+      "passed": true,
+      "evidence": "The candidate explicitly states that North America merchant processing is facilitated by one vendor."
+    },
+    {
+      "text": "[criterion-2] The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.",
+      "passed": false,
+      "evidence": "The candidate does not mention that the vendor maintains appropriate backup systems and alternative arrangements to avoid significant disruption."
+    },
+    {
+      "text": "[criterion-3] The Company’s merchant processing activity in North America is facilitated by one vendor. The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.",
+      "passed": true,
+      "evidence": "The candidate does not contradict the combined statement; it is consistent with the reference answer."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "total": 3,
+    "pass_rate": 0.667
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.6666666666666666,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Shift4's merchant processing activity in North America is facilitated by one vendor.",
+          "passed": true,
+          "evidence": "The candidate explicitly states that North America merchant processing is facilitated by one vendor."
+        },
+        {
+          "text": "[criterion-2] The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.",
+          "passed": false,
+          "evidence": "The candidate does not mention that the vendor maintains appropriate backup systems and alternative arrangements to avoid significant disruption."
+        },
+        {
+          "text": "[criterion-3] The Company’s merchant processing activity in North America is facilitated by one vendor. The Company believes that this vendor maintains appropriate backup systems and alternative arrangements to avoid a significant disruption of the processing in the event of an unforeseen event.",
+          "passed": true,
+          "evidence": "The candidate does not contradict the combined statement; it is consistent with the reference answer."
+        }
+      ]
+    }
+  ]
+}

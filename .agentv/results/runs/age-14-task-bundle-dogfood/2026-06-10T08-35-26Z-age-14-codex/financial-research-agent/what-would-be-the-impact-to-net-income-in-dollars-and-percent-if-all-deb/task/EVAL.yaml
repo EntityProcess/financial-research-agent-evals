@@ -1,0 +1,32 @@
+execution:
+  target: codex
+tests:
+  - id: what-would-be-the-impact-to-net-income-in-dollars-and-percent-if-all-deb
+    metadata:
+      source_row: 33
+      question_type: Adjustments
+      expert_time_mins: "15"
+    input: |
+      What would be the impact to net income in dollars and percent if all debt for Boeing in 2024 were refinanced at 3% higher interest rates than current?
+    expected_output: |
+      $1.261 Billion Negative Impact to Net Income, or a 10.7% decrease
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: $1.261 Billion Negative Impact to Net Income
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 10.7% decrease in Net Income
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: $1.261 Billion Negative Impact to Net Income, or a 10.7% decrease
+            operator: contradiction
+            weight: 1
+            required: true

@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: assume-bros-grows-revenue-by-30-cagr-and-gross-margins-compress-by-500bp
+    metadata:
+      source_row: 31
+      question_type: Financial Modeling
+      expert_time_mins: "10"
+    input: |
+      Assume BROS grows revenue by 30% CAGR and gross margins compress by 500bps from YE 2024. What is BROS gross profit in 2026? Round answer to nearest million.
+    expected_output: |
+      $467 million
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: BROS gross profit in 2026 is $467 million
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: $467 million
+            operator: contradiction
+            weight: 1
+            required: true

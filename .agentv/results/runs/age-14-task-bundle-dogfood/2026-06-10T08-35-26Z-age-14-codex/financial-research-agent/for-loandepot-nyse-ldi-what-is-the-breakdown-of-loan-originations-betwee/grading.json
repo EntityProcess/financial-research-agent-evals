@@ -1,0 +1,57 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Purchase loan originations: $12,057,993 in thousands",
+      "passed": true,
+      "evidence": "The candidate explicitly states Purchase originations of $12,057,993 thousand (shown as $12.058 billion), matching the criterion."
+    },
+    {
+      "text": "[criterion-2] Refinance loan originations: $5,250,321 in thousands",
+      "passed": true,
+      "evidence": "The candidate explicitly states Refinance originations of $5,250,321 thousand (shown as $5.250 billion), matching the criterion."
+    },
+    {
+      "text": "[criterion-3] Purchase: $12,057,993\nRefinance: $5,250,321\nIn thousands\n",
+      "passed": true,
+      "evidence": "The candidate’s figures align with the reference and do not contradict the required breakdown or units; it also notes the amounts are in thousands."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] Purchase loan originations: $12,057,993 in thousands",
+          "passed": true,
+          "evidence": "The candidate explicitly states Purchase originations of $12,057,993 thousand (shown as $12.058 billion), matching the criterion."
+        },
+        {
+          "text": "[criterion-2] Refinance loan originations: $5,250,321 in thousands",
+          "passed": true,
+          "evidence": "The candidate explicitly states Refinance originations of $5,250,321 thousand (shown as $5.250 billion), matching the criterion."
+        },
+        {
+          "text": "[criterion-3] Purchase: $12,057,993\nRefinance: $5,250,321\nIn thousands\n",
+          "passed": true,
+          "evidence": "The candidate’s figures align with the reference and do not contradict the required breakdown or units; it also notes the amounts are in thousands."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] AMZN FY 2025 capital expenditure guidance: $105.2 billion",
+      "passed": true,
+      "evidence": "The candidate states Amazon’s 2025 capex is over $100B / about $105B annualized, which supports AMZN FY 2025 capital expenditure guidance of $105.2 billion."
+    },
+    {
+      "text": "[criterion-2] GOOG FY 2025 capital expenditure guidance: $75.0 billion",
+      "passed": true,
+      "evidence": "The candidate states GOOG/Alphabet’s 2025 capex is about $75B and cites Alphabet’s approximately $75 billion guidance."
+    },
+    {
+      "text": "[criterion-3] META FY 2025 capital expenditure guidance: $62.5 billion",
+      "passed": true,
+      "evidence": "The candidate states Meta’s 2025 capex is $60B-$65B initially and later $64B-$72B, which includes the reference midpoint guidance of $62.5 billion."
+    },
+    {
+      "text": "[criterion-4] AMZN plans to spend the most on capital expenditures in 2025",
+      "passed": true,
+      "evidence": "The candidate explicitly concludes that Amazon (AMZN) planned the most 2025 capex among the three."
+    },
+    {
+      "text": "[criterion-5] FY 2025 capital expenditure guidance\nAMZN: $105.2 billion (management guided 2025 = Q4 2024 run-rate)\nGOOG: $75.0 billion\nMETA: $62.5 billion (at midpoint)\n\nAMZN plans to spend the most on capital expenditures in 2025.\n",
+      "passed": true,
+      "evidence": "The candidate’s statements are consistent with the reference ranking and amounts; it does not contradict the claim that AMZN has the highest 2025 capex guidance."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] AMZN FY 2025 capital expenditure guidance: $105.2 billion",
+          "passed": true,
+          "evidence": "The candidate states Amazon’s 2025 capex is over $100B / about $105B annualized, which supports AMZN FY 2025 capital expenditure guidance of $105.2 billion."
+        },
+        {
+          "text": "[criterion-2] GOOG FY 2025 capital expenditure guidance: $75.0 billion",
+          "passed": true,
+          "evidence": "The candidate states GOOG/Alphabet’s 2025 capex is about $75B and cites Alphabet’s approximately $75 billion guidance."
+        },
+        {
+          "text": "[criterion-3] META FY 2025 capital expenditure guidance: $62.5 billion",
+          "passed": true,
+          "evidence": "The candidate states Meta’s 2025 capex is $60B-$65B initially and later $64B-$72B, which includes the reference midpoint guidance of $62.5 billion."
+        },
+        {
+          "text": "[criterion-4] AMZN plans to spend the most on capital expenditures in 2025",
+          "passed": true,
+          "evidence": "The candidate explicitly concludes that Amazon (AMZN) planned the most 2025 capex among the three."
+        },
+        {
+          "text": "[criterion-5] FY 2025 capital expenditure guidance\nAMZN: $105.2 billion (management guided 2025 = Q4 2024 run-rate)\nGOOG: $75.0 billion\nMETA: $62.5 billion (at midpoint)\n\nAMZN plans to spend the most on capital expenditures in 2025.\n",
+          "passed": true,
+          "evidence": "The candidate’s statements are consistent with the reference ranking and amounts; it does not contradict the claim that AMZN has the highest 2025 capex guidance."
+        }
+      ]
+    }
+  ]
+}

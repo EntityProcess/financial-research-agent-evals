@@ -1,0 +1,76 @@
+execution:
+  target: codex
+tests:
+  - id: what-portion-of-uber-s-2024-revenue-growth-was-driven-by-take-rate-expan
+    metadata:
+      source_row: 43
+      question_type: Financial Modeling
+      expert_time_mins: "15"
+    input: |
+      What portion of Uber’s 2024 revenue growth was driven by take-rate expansion versus volume growth?
+    expected_output: |
+      Take Rate:
+      2023: 27.04%
+      2024: 27.02%
+
+      Take rate was virtually flat from 2023 to 2024. Overall revenue growth was 18%, driven by the 18% gross bookings growth YoY (25% in mobility, 17% in delivery and 2% in freight). Hence, all growth in revenue was driven by pure volume as opposed to take rate increases
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "Take rate 2023: 27.04%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "Take rate 2024: 27.02%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: Take rate was virtually flat from 2023 to 2024
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: Overall revenue growth was 18%
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: "Gross bookings growth YoY: 18%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: "Mobility segment growth: 25%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: "Delivery segment growth: 17%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-8
+            outcome: "Freight segment growth: 2%"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-9
+            outcome: All growth in revenue was driven by volume, not take rate increases
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-10
+            outcome: |
+              Take Rate:
+              2023: 27.04%
+              2024: 27.02%
+
+              Take rate was virtually flat from 2023 to 2024. Overall revenue growth was 18%, driven by the 18% gross bookings growth YoY (25% in mobility, 17% in delivery and 2% in freight). Hence, all growth in revenue was driven by pure volume as opposed to take rate increases
+            operator: contradiction
+            weight: 1
+            required: true

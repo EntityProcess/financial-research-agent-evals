@@ -1,0 +1,52 @@
+execution:
+  target: codex
+tests:
+  - id: as-of-december-2024-what-has-been-zillow-s-nasdaq-z-acquisition-strategy
+    metadata:
+      source_row: 46
+      question_type: Market Analysis
+      expert_time_mins: "30"
+    input: |
+      As of December 2024, what has been Zillow's (NASDAQ:Z) acquisition strategy over the past 2 years and how does it align with the company's evolving revenue mix?
+    expected_output: |
+      The company has made several acquisitions of subscription revenue platforms. On December 8, it acquired Follow Up Boss, a CRM for real estate professionals, for $399 million, with up to $100 million in contingent consideration. On September 11, it acquired Spruce, a title and escrow platform, for $19 million. On July 31, the company acquired Aryeo, a software company for real estate photographers, for $35 million. In the post-COVID tight housing market environment, revenue related to Mortgages and Residential (Premier Agent) has declined. The business has acquired various software subscription revenue businesses as it continues to round out its portfolio of home-buying services.
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Acquisition of Follow Up Boss for $399 million with up to $100 million in contingent consideration on December 8
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Acquisition of Spruce for $19 million on September 11
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: Acquisition of Aryeo for $35 million on July 31
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: Decline in revenue related to Mortgages and Residential (Premier Agent) in post-COVID tight housing market
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: Acquisition strategy focused on subscription revenue platforms
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: Strategy to round out portfolio of home-buying services
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: The company has made several acquisitions of subscription revenue platforms. On December 8, it acquired Follow Up Boss, a CRM for real estate professionals, for $399 million, with up to $100 million in contingent consideration. On September 11, it acquired Spruce, a title and escrow platform, for $19 million. On July 31, the company acquired Aryeo, a software company for real estate photographers, for $35 million. In the post-COVID tight housing market environment, revenue related to Mortgages and Residential (Premier Agent) has declined. The business has acquired various software subscription revenue businesses as it continues to round out its portfolio of home-buying services.
+            operator: contradiction
+            weight: 1
+            required: true

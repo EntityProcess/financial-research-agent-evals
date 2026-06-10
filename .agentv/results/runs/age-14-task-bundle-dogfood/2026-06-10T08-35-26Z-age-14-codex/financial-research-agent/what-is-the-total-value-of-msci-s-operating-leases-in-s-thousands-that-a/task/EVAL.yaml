@@ -1,0 +1,29 @@
+execution:
+  target: codex
+tests:
+  - id: what-is-the-total-value-of-msci-s-operating-leases-in-s-thousands-that-a
+    metadata:
+      source_row: 19
+      question_type: Numerical Reasoning
+      expert_time_mins: "5"
+    input: |
+      What is the total value of MSCI's operating leases (in $'s, thousands) that are maturing in the next three years? What percentage?
+    expected_output: |
+      In thousands:
+
+      $85,002 which is 51.3% of leases
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: $85,002 thousands which is 51.3% of leases
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: $85,002 thousands which is 51.3% of leases
+            operator: contradiction
+            weight: 1
+            required: true

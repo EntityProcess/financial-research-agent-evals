@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: who-is-the-current-cfo-of-airbnb-nasdaq-abnb
+    metadata:
+      source_row: 7
+      question_type: Qualitative Retrieval
+      expert_time_mins: "2"
+    input: |
+      Who is the current CFO of Airbnb (NASDAQ: ABNB)?
+    expected_output: |
+      Ellie Mertz
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Ellie Mertz is the current CFO of Airbnb
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Ellie Mertz
+            operator: contradiction
+            weight: 1
+            required: true

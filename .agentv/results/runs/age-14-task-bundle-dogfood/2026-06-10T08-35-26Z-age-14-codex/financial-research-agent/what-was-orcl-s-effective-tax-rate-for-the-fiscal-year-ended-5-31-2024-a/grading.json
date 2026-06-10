@@ -1,0 +1,67 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Effective Tax Rate 2023: 6.8%",
+      "passed": true,
+      "evidence": "The candidate states ORCL’s effective income tax rate for fiscal 2023 was 6.8%."
+    },
+    {
+      "text": "[criterion-2] Effective Tax Rate 2024: 10.9%",
+      "passed": true,
+      "evidence": "The candidate states ORCL’s effective income tax rate for fiscal 2024 was 10.9%."
+    },
+    {
+      "text": "[criterion-3] Delta: increased 410bps",
+      "passed": false,
+      "evidence": "The candidate says 'Delta: +410bps' rather than the required wording 'Delta: increased 410bps'."
+    },
+    {
+      "text": "[criterion-4] Effective Tax Rate\n2023: 6.8%\n2024: 10.9%\nDelta: increased 410bps\n",
+      "passed": true,
+      "evidence": "The candidate’s values and direction match the reference; it does not contradict the stated KPI figures."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.75,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Effective Tax Rate 2023: 6.8%",
+          "passed": true,
+          "evidence": "The candidate states ORCL’s effective income tax rate for fiscal 2023 was 6.8%."
+        },
+        {
+          "text": "[criterion-2] Effective Tax Rate 2024: 10.9%",
+          "passed": true,
+          "evidence": "The candidate states ORCL’s effective income tax rate for fiscal 2024 was 10.9%."
+        },
+        {
+          "text": "[criterion-3] Delta: increased 410bps",
+          "passed": false,
+          "evidence": "The candidate says 'Delta: +410bps' rather than the required wording 'Delta: increased 410bps'."
+        },
+        {
+          "text": "[criterion-4] Effective Tax Rate\n2023: 6.8%\n2024: 10.9%\nDelta: increased 410bps\n",
+          "passed": true,
+          "evidence": "The candidate’s values and direction match the reference; it does not contradict the stated KPI figures."
+        }
+      ]
+    }
+  ]
+}

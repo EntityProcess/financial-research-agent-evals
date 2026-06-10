@@ -1,0 +1,87 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 2024 FCF margin: 12.7%",
+      "passed": true,
+      "evidence": "The candidate explicitly states 2024 FCF margin is 12.7%."
+    },
+    {
+      "text": "[criterion-2] 2023 FCF margin: 11.3%",
+      "passed": true,
+      "evidence": "The candidate explicitly states 2023 FCF margin is 11.3%."
+    },
+    {
+      "text": "[criterion-3] 2022 FCF margin: 24.8%",
+      "passed": false,
+      "evidence": "The candidate does not provide a 2022 FCF margin value, so this criterion is not supported."
+    },
+    {
+      "text": "[criterion-4] FCF margin has declined substantially since 2022",
+      "passed": true,
+      "evidence": "The candidate says FCF margin improved from 2023 to 2024 and then fell in 2025; this does not contradict a decline since 2022 and is broadly consistent with the notion of a post-2022 decline."
+    },
+    {
+      "text": "[criterion-5] FCF margin settled into low teens percent in 2023 and 2024",
+      "passed": false,
+      "evidence": "The candidate describes 2023 and 2024 as low teens, but its trend includes a 2025 value of 9.1%, which means it does not clearly support the statement that the margin settled into low teens percent in 2023 and 2024 as a stable pattern."
+    },
+    {
+      "text": "[criterion-6] 2024: 12.7%\n2023: 11.3%\n2022: 24.8%\n\nFCF margin has declined substantially since 2022 and seems to have settled into a new normal of low teens percent.\n",
+      "passed": true,
+      "evidence": "The candidate does not contradict the provided summary and partially aligns with it by describing low-teens margins in 2023 and 2024, though it adds 2025."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 2,
+    "total": 6,
+    "pass_rate": 0.667
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.6666666666666666,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] 2024 FCF margin: 12.7%",
+          "passed": true,
+          "evidence": "The candidate explicitly states 2024 FCF margin is 12.7%."
+        },
+        {
+          "text": "[criterion-2] 2023 FCF margin: 11.3%",
+          "passed": true,
+          "evidence": "The candidate explicitly states 2023 FCF margin is 11.3%."
+        },
+        {
+          "text": "[criterion-3] 2022 FCF margin: 24.8%",
+          "passed": false,
+          "evidence": "The candidate does not provide a 2022 FCF margin value, so this criterion is not supported."
+        },
+        {
+          "text": "[criterion-4] FCF margin has declined substantially since 2022",
+          "passed": true,
+          "evidence": "The candidate says FCF margin improved from 2023 to 2024 and then fell in 2025; this does not contradict a decline since 2022 and is broadly consistent with the notion of a post-2022 decline."
+        },
+        {
+          "text": "[criterion-5] FCF margin settled into low teens percent in 2023 and 2024",
+          "passed": false,
+          "evidence": "The candidate describes 2023 and 2024 as low teens, but its trend includes a 2025 value of 9.1%, which means it does not clearly support the statement that the margin settled into low teens percent in 2023 and 2024 as a stable pattern."
+        },
+        {
+          "text": "[criterion-6] 2024: 12.7%\n2023: 11.3%\n2022: 24.8%\n\nFCF margin has declined substantially since 2022 and seems to have settled into a new normal of low teens percent.\n",
+          "passed": true,
+          "evidence": "The candidate does not contradict the provided summary and partially aligns with it by describing low-teens margins in 2023 and 2024, though it adds 2025."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+execution:
+  target: codex
+tests:
+  - id: compare-the-fy24-dividend-payout-ratio-of-coca-cola-ko-to-that-of-its-co
+    metadata:
+      source_row: 42
+      question_type: Market Analysis
+      expert_time_mins: "30"
+    input: |
+      Compare the FY24 dividend payout ratio of Coca-Cola (KO) to that of its competitors and rank in order from highest to lowest.
+    expected_output: |
+      KDP: 0.83
+       KO: 0.79
+       PEP: 0.75
+       KHC: 0.70
+       SJM: 0.59
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: "KDP: 0.83"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: "KO: 0.79"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: "PEP: 0.75"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: "KHC: 0.70"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: "SJM: 0.59"
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: |
+              KDP: 0.83
+              KO: 0.79
+              PEP: 0.75
+              KHC: 0.70
+              SJM: 0.59
+            operator: contradiction
+            weight: 1
+            required: true

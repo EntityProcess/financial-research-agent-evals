@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: what-was-fnd-same-store-sales-growth-in-q4-2024
+    metadata:
+      source_row: 41
+      question_type: Quantitative Retrieval
+      expert_time_mins: "2"
+    input: |
+      What was FND same-store sales growth in Q4 2024?
+    expected_output: |
+      -0.8%
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: FND same-store sales growth in Q4 2024 is -0.8%
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: FND same-store sales growth in Q4 2024 is -0.8%
+            operator: contradiction
+            weight: 1
+            required: true

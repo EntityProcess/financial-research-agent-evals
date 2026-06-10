@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: what-is-the-maximum-dilutive-impact-in-number-of-shares-of-snapchat-s-ou
+    metadata:
+      source_row: 30
+      question_type: Financial Modeling
+      expert_time_mins: "30"
+    input: |
+      What is the maximum dilutive impact in number of shares of Snapchat's outstanding convertible notes as of 12/31/2024?
+    expected_output: |
+      85,945,127 shares if all converts were converted (including out of the money converts)
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 85,945,127 shares if all converts were converted (including out of the money converts)
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 85,945,127 shares if all converts were converted (including out of the money converts)
+            operator: contradiction
+            weight: 1
+            required: true

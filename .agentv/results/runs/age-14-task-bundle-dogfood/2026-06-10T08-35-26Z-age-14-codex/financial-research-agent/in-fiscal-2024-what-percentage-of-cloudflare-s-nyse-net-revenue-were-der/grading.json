@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 20% of customers were derived from channel partners",
+      "passed": true,
+      "evidence": "The candidate explicitly states that 20% of Cloudflare’s fiscal 2024 revenue came from channel partners, matching the reference."
+    },
+    {
+      "text": "[criterion-2] 20% of customers were derived from channel partners",
+      "passed": true,
+      "evidence": "The candidate answer does not contradict the criterion; it directly supports the same 20% figure."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] 20% of customers were derived from channel partners",
+          "passed": true,
+          "evidence": "The candidate explicitly states that 20% of Cloudflare’s fiscal 2024 revenue came from channel partners, matching the reference."
+        },
+        {
+          "text": "[criterion-2] 20% of customers were derived from channel partners",
+          "passed": true,
+          "evidence": "The candidate answer does not contradict the criterion; it directly supports the same 20% figure."
+        }
+      ]
+    }
+  ]
+}

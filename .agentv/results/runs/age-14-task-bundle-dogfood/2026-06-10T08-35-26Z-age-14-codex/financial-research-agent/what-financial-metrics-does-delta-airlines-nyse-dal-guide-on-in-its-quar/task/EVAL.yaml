@@ -1,0 +1,61 @@
+execution:
+  target: codex
+tests:
+  - id: what-financial-metrics-does-delta-airlines-nyse-dal-guide-on-in-its-quar
+    metadata:
+      source_row: 39
+      question_type: Qualitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      What financial metrics does Delta Airlines (NYSE: DAL) guide on in its quarterly earnings reports?
+    expected_output: |
+      Delta Airlines provides quarterly guidance and full FY guidance.
+
+      For the Quarter, Delta provides guidance for Total Revenue YoY Growth, Operating Margin, and Earnings Per Share
+
+      For the Full FY, Delta provides guidance for Earnings per Share YoY Growth, Free Cash Flow, and Gross Leverage
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Quarterly guidance includes Total Revenue YoY Growth
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: Quarterly guidance includes Operating Margin
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: Quarterly guidance includes Earnings Per Share
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-4
+            outcome: Full FY guidance includes Earnings per Share YoY Growth
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-5
+            outcome: Full FY guidance includes Free Cash Flow
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-6
+            outcome: Full FY guidance includes Gross Leverage
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-7
+            outcome: |
+              Delta Airlines provides quarterly guidance and full FY guidance.
+
+              For the Quarter, Delta provides guidance for Total Revenue YoY Growth, Operating Margin, and Earnings Per Share
+
+              For the Full FY, Delta provides guidance for Earnings per Share YoY Growth, Free Cash Flow, and Gross Leverage
+            operator: contradiction
+            weight: 1
+            required: true

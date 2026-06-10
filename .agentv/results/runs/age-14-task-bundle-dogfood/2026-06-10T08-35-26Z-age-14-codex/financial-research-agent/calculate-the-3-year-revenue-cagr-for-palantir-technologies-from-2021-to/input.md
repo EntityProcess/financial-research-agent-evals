@@ -1,0 +1,2 @@
+@[user]:
+Calculate the 3 year revenue CAGR for Palantir Technologies from 2021 to 2024.

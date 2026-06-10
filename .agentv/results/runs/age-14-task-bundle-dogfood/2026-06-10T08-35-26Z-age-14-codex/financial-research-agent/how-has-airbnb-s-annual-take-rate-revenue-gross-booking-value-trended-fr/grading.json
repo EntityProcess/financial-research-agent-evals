@@ -1,0 +1,77 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 2022 - 13.3%",
+      "passed": true,
+      "evidence": "The candidate explicitly states FY 2022 take rate is 13.3%."
+    },
+    {
+      "text": "[criterion-2] 2023 - 13.5%",
+      "passed": true,
+      "evidence": "The candidate explicitly states FY 2023 take rate is 13.5%."
+    },
+    {
+      "text": "[criterion-3] 2024 - 13.6%",
+      "passed": true,
+      "evidence": "The candidate explicitly states FY 2024 take rate is 13.6%."
+    },
+    {
+      "text": "[criterion-4] ABNB incrementally increased its take rate year over year from 2022 to 2024",
+      "passed": true,
+      "evidence": "The candidate says the take rate was broadly stable but edged up modestly from 13.3% in 2022 to 13.6% in 2024, which supports an incremental year-over-year increase."
+    },
+    {
+      "text": "[criterion-5] 2022 - 13.3%\n2023 - 13.5%\n2024 - 13.6%\n\nFrom 2022 - 2024, ABNB incrementally increased its take rate year over year.\n",
+      "passed": true,
+      "evidence": "The candidate answer does not contradict the reference statement; it presents the same figures and the same upward trend."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] 2022 - 13.3%",
+          "passed": true,
+          "evidence": "The candidate explicitly states FY 2022 take rate is 13.3%."
+        },
+        {
+          "text": "[criterion-2] 2023 - 13.5%",
+          "passed": true,
+          "evidence": "The candidate explicitly states FY 2023 take rate is 13.5%."
+        },
+        {
+          "text": "[criterion-3] 2024 - 13.6%",
+          "passed": true,
+          "evidence": "The candidate explicitly states FY 2024 take rate is 13.6%."
+        },
+        {
+          "text": "[criterion-4] ABNB incrementally increased its take rate year over year from 2022 to 2024",
+          "passed": true,
+          "evidence": "The candidate says the take rate was broadly stable but edged up modestly from 13.3% in 2022 to 13.6% in 2024, which supports an incremental year-over-year increase."
+        },
+        {
+          "text": "[criterion-5] 2022 - 13.3%\n2023 - 13.5%\n2024 - 13.6%\n\nFrom 2022 - 2024, ABNB incrementally increased its take rate year over year.\n",
+          "passed": true,
+          "evidence": "The candidate answer does not contradict the reference statement; it presents the same figures and the same upward trend."
+        }
+      ]
+    }
+  ]
+}

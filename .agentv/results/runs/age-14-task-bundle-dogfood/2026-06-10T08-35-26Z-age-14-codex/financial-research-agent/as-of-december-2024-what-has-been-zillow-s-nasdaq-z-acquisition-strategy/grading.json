@@ -1,0 +1,97 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] Acquisition of Follow Up Boss for $399 million with up to $100 million in contingent consideration on December 8",
+      "passed": false,
+      "evidence": "The candidate mentions Follow Up Boss for $399 million plus up to $100 million contingent consideration, but dates it to Dec. 2023 rather than Dec. 8 as required by the criterion."
+    },
+    {
+      "text": "[criterion-2] Acquisition of Spruce for $19 million on September 11",
+      "passed": false,
+      "evidence": "The candidate includes Spruce for about $19 million, but dates the acquisition to Sept. 2023 rather than Sept. 11 as required."
+    },
+    {
+      "text": "[criterion-3] Acquisition of Aryeo for $35 million on July 31",
+      "passed": false,
+      "evidence": "The candidate includes Aryeo for about $35 million, but dates the acquisition to July 2023 rather than July 31 as required."
+    },
+    {
+      "text": "[criterion-4] Decline in revenue related to Mortgages and Residential (Premier Agent) in post-COVID tight housing market",
+      "passed": false,
+      "evidence": "The candidate does not state that revenue related to Mortgages and Residential (Premier Agent) declined in the post-COVID tight housing market; instead it says Residential remains core and gives growth figures."
+    },
+    {
+      "text": "[criterion-5] Acquisition strategy focused on subscription revenue platforms",
+      "passed": true,
+      "evidence": "The candidate explicitly describes the acquisition strategy as targeted, software-led, asset-light, and focused on integrated software experiences, which supports the idea of acquiring subscription revenue platforms."
+    },
+    {
+      "text": "[criterion-6] Strategy to round out portfolio of home-buying services",
+      "passed": true,
+      "evidence": "The candidate says the deals build tools around agents, listings, CRM, transaction workflow, and closing, and that they support a shift toward an integrated housing transaction platform, which aligns with rounding out home-buying services."
+    },
+    {
+      "text": "[criterion-7] The company has made several acquisitions of subscription revenue platforms. On December 8, it acquired Follow Up Boss, a CRM for real estate professionals, for $399 million, with up to $100 million in contingent consideration. On September 11, it acquired Spruce, a title and escrow platform, for $19 million. On July 31, the company acquired Aryeo, a software company for real estate photographers, for $35 million. In the post-COVID tight housing market environment, revenue related to Mortgages and Residential (Premier Agent) has declined. The business has acquired various software subscription revenue businesses as it continues to round out its portfolio of home-buying services.",
+      "passed": false,
+      "evidence": "This contradiction check is not satisfied because the candidate gives conflicting timing for the referenced acquisitions (e.g., Dec. 2023, Sept. 2023, July 2023 instead of the cited dates) and does not reproduce the reference summary faithfully."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 5,
+    "total": 7,
+    "pass_rate": 0.286
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.2857142857142857,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] Acquisition of Follow Up Boss for $399 million with up to $100 million in contingent consideration on December 8",
+          "passed": false,
+          "evidence": "The candidate mentions Follow Up Boss for $399 million plus up to $100 million contingent consideration, but dates it to Dec. 2023 rather than Dec. 8 as required by the criterion."
+        },
+        {
+          "text": "[criterion-2] Acquisition of Spruce for $19 million on September 11",
+          "passed": false,
+          "evidence": "The candidate includes Spruce for about $19 million, but dates the acquisition to Sept. 2023 rather than Sept. 11 as required."
+        },
+        {
+          "text": "[criterion-3] Acquisition of Aryeo for $35 million on July 31",
+          "passed": false,
+          "evidence": "The candidate includes Aryeo for about $35 million, but dates the acquisition to July 2023 rather than July 31 as required."
+        },
+        {
+          "text": "[criterion-4] Decline in revenue related to Mortgages and Residential (Premier Agent) in post-COVID tight housing market",
+          "passed": false,
+          "evidence": "The candidate does not state that revenue related to Mortgages and Residential (Premier Agent) declined in the post-COVID tight housing market; instead it says Residential remains core and gives growth figures."
+        },
+        {
+          "text": "[criterion-5] Acquisition strategy focused on subscription revenue platforms",
+          "passed": true,
+          "evidence": "The candidate explicitly describes the acquisition strategy as targeted, software-led, asset-light, and focused on integrated software experiences, which supports the idea of acquiring subscription revenue platforms."
+        },
+        {
+          "text": "[criterion-6] Strategy to round out portfolio of home-buying services",
+          "passed": true,
+          "evidence": "The candidate says the deals build tools around agents, listings, CRM, transaction workflow, and closing, and that they support a shift toward an integrated housing transaction platform, which aligns with rounding out home-buying services."
+        },
+        {
+          "text": "[criterion-7] The company has made several acquisitions of subscription revenue platforms. On December 8, it acquired Follow Up Boss, a CRM for real estate professionals, for $399 million, with up to $100 million in contingent consideration. On September 11, it acquired Spruce, a title and escrow platform, for $19 million. On July 31, the company acquired Aryeo, a software company for real estate photographers, for $35 million. In the post-COVID tight housing market environment, revenue related to Mortgages and Residential (Premier Agent) has declined. The business has acquired various software subscription revenue businesses as it continues to round out its portfolio of home-buying services.",
+          "passed": false,
+          "evidence": "This contradiction check is not satisfied because the candidate gives conflicting timing for the referenced acquisitions (e.g., Dec. 2023, Sept. 2023, July 2023 instead of the cited dates) and does not reproduce the reference summary faithfully."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: did-four-beat-or-miss-its-end-to-end-payment-volume-guidance-at-midpoint
+    metadata:
+      source_row: 47
+      question_type: Beat or Miss
+      expert_time_mins: "10"
+    input: |
+      Did FOUR beat or miss its end to end payment volume guidance at midpoint for Q3 2024 provided in Q1 2024? Express as % BEAT or MISS
+    expected_output: |
+      7.4% MISS
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 7.4% MISS
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 7.4% MISS
+            operator: contradiction
+            weight: 1
+            required: true

@@ -1,0 +1,2 @@
+@[user]:
+As of FY 2024, what are the terms of the Junior Subordinated Debentures in the Allstate Corporation's (NYSE: ALL) capital structure?

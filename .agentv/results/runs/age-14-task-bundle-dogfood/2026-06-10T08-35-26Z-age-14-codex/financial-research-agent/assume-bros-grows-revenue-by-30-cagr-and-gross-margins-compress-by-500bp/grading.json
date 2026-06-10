@@ -1,0 +1,47 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] BROS gross profit in 2026 is $467 million",
+      "passed": true,
+      "evidence": "The candidate explicitly states that BROS 2026 gross profit is $467 million and shows supporting math arriving at ~$466.6M, rounded to $467M."
+    },
+    {
+      "text": "[criterion-2] $467 million",
+      "passed": true,
+      "evidence": "The candidate answer does not contradict '$467 million'; it matches that value exactly."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] BROS gross profit in 2026 is $467 million",
+          "passed": true,
+          "evidence": "The candidate explicitly states that BROS 2026 gross profit is $467 million and shows supporting math arriving at ~$466.6M, rounded to $467M."
+        },
+        {
+          "text": "[criterion-2] $467 million",
+          "passed": true,
+          "evidence": "The candidate answer does not contradict '$467 million'; it matches that value exactly."
+        }
+      ]
+    }
+  ]
+}

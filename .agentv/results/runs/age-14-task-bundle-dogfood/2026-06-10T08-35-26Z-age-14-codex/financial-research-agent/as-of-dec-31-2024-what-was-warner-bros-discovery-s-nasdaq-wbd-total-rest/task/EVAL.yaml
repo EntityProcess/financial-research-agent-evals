@@ -1,0 +1,27 @@
+execution:
+  target: codex
+tests:
+  - id: as-of-dec-31-2024-what-was-warner-bros-discovery-s-nasdaq-wbd-total-rest
+    metadata:
+      source_row: 37
+      question_type: Quantitative Retrieval
+      expert_time_mins: "5"
+    input: |
+      As of Dec 31, 2024, what was Warner Bros. Discovery's (NASDAQ: WBD) Total Restructuring Costs incurred as a result of its 2022 Merger?
+    expected_output: |
+      $4.7 Billion
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: Warner Bros. Discovery's Total Restructuring Costs as of Dec 31, 2024, were $4.7 Billion
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: $4.7 Billion
+            operator: contradiction
+            weight: 1
+            required: true

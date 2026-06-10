@@ -1,0 +1,8 @@
+@[assistant]:
+Delta Air Lines’ quarterly earnings releases typically guide on these financial metrics:
+
+- **Quarter-ahead guidance:** **Total revenue year-over-year growth**, **operating margin**, and **earnings per share (EPS)**. Example: its March 2026 report guided 2Q26 to total revenue “up low-teens,” operating margin **6%-8%**, and EPS **$1.00-$1.50**. ([ir.delta.com](https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-March-Quarter-2026-Financial-Results/default.aspx))
+- **Full-year guidance, when provided:** **EPS**, **free cash flow**, and **gross leverage**. Example: its January 2026 release guided FY2026 EPS of **$6.50-$7.50**, free cash flow of **$3-$4 billion**, and gross leverage of about **2x**. ([ir.delta.com](https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-December-Quarter-and-Full-Year-2025-Financial-Results/default.aspx))
+- **Occasionally in outlook commentary:** **non-fuel unit cost / CASM-ex growth**, **capacity growth**, and fuel-price assumptions, but these are usually supporting assumptions rather than the main formal guidance table. Delta’s Jan. 2026 release noted expected non-fuel unit cost growth “up low-single digits,” and its Apr. 2026 release included an all-in fuel-price assumption of about **$4.30/gal**. ([ir.delta.com](https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-December-Quarter-and-Full-Year-2025-Financial-Results/default.aspx)) ([ir.delta.com](https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-March-Quarter-2026-Financial-Results/default.aspx))
+
+So the core guided metrics are **revenue growth, operating margin, EPS, free cash flow, and gross leverage**.

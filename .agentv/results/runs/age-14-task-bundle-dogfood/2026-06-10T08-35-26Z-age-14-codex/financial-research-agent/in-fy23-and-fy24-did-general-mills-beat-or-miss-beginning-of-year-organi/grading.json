@@ -1,0 +1,107 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] FY23 Guidance: 4-5% organic net sales growth (raised to 10% mid-year)",
+      "passed": true,
+      "evidence": "The candidate states FY23 beginning organic net sales guidance was +4% to +5%, matching the criterion."
+    },
+    {
+      "text": "[criterion-2] FY24 Guidance: 3-4% organic net sales growth",
+      "passed": true,
+      "evidence": "The candidate states FY24 beginning organic net sales guidance was +3% to +4%, matching the criterion."
+    },
+    {
+      "text": "[criterion-3] FY23 Actual: 10% organic net sales growth (Beat)",
+      "passed": true,
+      "evidence": "The candidate says FY23 actual organic net sales growth was +10% and labels it a beat."
+    },
+    {
+      "text": "[criterion-4] FY24 Actual: -1% organic net sales growth (Miss)",
+      "passed": true,
+      "evidence": "The candidate says FY24 actual organic net sales growth was -1% and labels it a miss."
+    },
+    {
+      "text": "[criterion-5] FY23: Beat guidance after raising to 10%",
+      "passed": true,
+      "evidence": "The candidate explicitly says FY23 beat guidance and notes the mid-year raise to 10%, consistent with the criterion."
+    },
+    {
+      "text": "[criterion-6] FY24: Missed guidance",
+      "passed": true,
+      "evidence": "The candidate explicitly states FY24 missed guidance."
+    },
+    {
+      "text": "[criterion-7] 2025 Guidance: Organic net sales expected to be flat to up 1%",
+      "passed": true,
+      "evidence": "The candidate gives FY25 guidance as flat to +1%, matching the criterion."
+    },
+    {
+      "text": "[criterion-8] FY23 Guidance: 4-5% (raised to 10%) vs Actual: 10% → Beat\nFY24 Guidance: 3-4% vs Actual: -1% → Miss\nFY25 Guidance: Organic net sales flat to up 1%\n",
+      "passed": true,
+      "evidence": "The candidate's summary is consistent with all listed outcomes: FY23 beat, FY24 miss, and FY25 flat to up 1%."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 1,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "pass",
+      "assertions": [
+        {
+          "text": "[criterion-1] FY23 Guidance: 4-5% organic net sales growth (raised to 10% mid-year)",
+          "passed": true,
+          "evidence": "The candidate states FY23 beginning organic net sales guidance was +4% to +5%, matching the criterion."
+        },
+        {
+          "text": "[criterion-2] FY24 Guidance: 3-4% organic net sales growth",
+          "passed": true,
+          "evidence": "The candidate states FY24 beginning organic net sales guidance was +3% to +4%, matching the criterion."
+        },
+        {
+          "text": "[criterion-3] FY23 Actual: 10% organic net sales growth (Beat)",
+          "passed": true,
+          "evidence": "The candidate says FY23 actual organic net sales growth was +10% and labels it a beat."
+        },
+        {
+          "text": "[criterion-4] FY24 Actual: -1% organic net sales growth (Miss)",
+          "passed": true,
+          "evidence": "The candidate says FY24 actual organic net sales growth was -1% and labels it a miss."
+        },
+        {
+          "text": "[criterion-5] FY23: Beat guidance after raising to 10%",
+          "passed": true,
+          "evidence": "The candidate explicitly says FY23 beat guidance and notes the mid-year raise to 10%, consistent with the criterion."
+        },
+        {
+          "text": "[criterion-6] FY24: Missed guidance",
+          "passed": true,
+          "evidence": "The candidate explicitly states FY24 missed guidance."
+        },
+        {
+          "text": "[criterion-7] 2025 Guidance: Organic net sales expected to be flat to up 1%",
+          "passed": true,
+          "evidence": "The candidate gives FY25 guidance as flat to +1%, matching the criterion."
+        },
+        {
+          "text": "[criterion-8] FY23 Guidance: 4-5% (raised to 10%) vs Actual: 10% → Beat\nFY24 Guidance: 3-4% vs Actual: -1% → Miss\nFY25 Guidance: Organic net sales flat to up 1%\n",
+          "passed": true,
+          "evidence": "The candidate's summary is consistent with all listed outcomes: FY23 beat, FY24 miss, and FY25 flat to up 1%."
+        }
+      ]
+    }
+  ]
+}

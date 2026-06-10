@@ -1,0 +1,32 @@
+execution:
+  target: codex
+tests:
+  - id: did-tjx-beat-or-miss-its-q4-fy-2025-pre-tax-margin-guidance-express-resu
+    metadata:
+      source_row: 3
+      question_type: Beat or Miss
+      expert_time_mins: "10"
+    input: |
+      Did TJX beat or miss its Q4 FY 2025 pre-tax margin guidance? Express result as BPS difference
+    expected_output: |
+      80bps beat from low end and 70bps beat from high end
+    assertions:
+      - name: dexter-rubric
+        type: llm-grader
+        prompt: graders/prompts/dexter-grader.md
+        rubrics:
+          - id: criterion-1
+            outcome: 80bps beat from low end
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-2
+            outcome: 70bps beat from high end
+            operator: correctness
+            weight: 1
+            required: true
+          - id: criterion-3
+            outcome: 80bps beat from low end and 70bps beat from high end
+            operator: contradiction
+            weight: 1
+            required: true
