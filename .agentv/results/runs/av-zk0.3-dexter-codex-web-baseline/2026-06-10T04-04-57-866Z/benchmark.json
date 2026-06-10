@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "eval_file": "/public-demo/financial-research-agent/evals/financial-research-agent.eval.yaml",
+    "timestamp": "2026-06-10T04:04:59.218Z",
+    "targets": [
+      "codex"
+    ],
+    "tests_run": [
+      "did-tjx-beat-or-miss-its-q4-fy-2025-pre-tax-margin-guidance-express-resu"
+    ],
+    "experiment": "av-zk0.3-dexter-codex-web-baseline",
+    "planned_test_count": 1
+  },
+  "run_summary": {
+    "codex": {
+      "pass_rate": {
+        "mean": 0,
+        "stddev": 0
+      },
+      "time_seconds": {
+        "mean": 34.792,
+        "stddev": 0
+      },
+      "tokens": {
+        "mean": 29719,
+        "stddev": 0
+      }
+    }
+  },
+  "per_grader_summary": {
+    "dexter-rubric:llm-grader": {
+      "mean": 0.333,
+      "stddev": 0
+    }
+  },
+  "notes": []
+}

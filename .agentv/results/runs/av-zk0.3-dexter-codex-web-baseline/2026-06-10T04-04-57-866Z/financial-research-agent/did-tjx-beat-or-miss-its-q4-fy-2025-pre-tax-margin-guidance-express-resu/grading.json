@@ -1,0 +1,57 @@
+{
+  "assertions": [
+    {
+      "text": "[criterion-1] 80bps beat from low end",
+      "passed": false,
+      "evidence": "Candidate only states a 70 bps beat from the high end; it does not mention the 80 bps beat from the low end."
+    },
+    {
+      "text": "[criterion-2] 70bps beat from high end",
+      "passed": true,
+      "evidence": "Candidate explicitly says TJX beat guidance by 70 bps, matching the high-end comparison."
+    },
+    {
+      "text": "[criterion-3] 80bps beat from low end and 70bps beat from high end",
+      "passed": false,
+      "evidence": "The candidate omits the combined reference result and instead gives only a single 70 bps beat, which conflicts with the expected full statement."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 2,
+    "total": 3,
+    "pass_rate": 0.333
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "errors_encountered": 0
+  },
+  "graders": [
+    {
+      "name": "dexter-rubric",
+      "type": "llm-grader",
+      "score": 0.3333333333333333,
+      "reasoning": "",
+      "weight": 1,
+      "verdict": "fail",
+      "assertions": [
+        {
+          "text": "[criterion-1] 80bps beat from low end",
+          "passed": false,
+          "evidence": "Candidate only states a 70 bps beat from the high end; it does not mention the 80 bps beat from the low end."
+        },
+        {
+          "text": "[criterion-2] 70bps beat from high end",
+          "passed": true,
+          "evidence": "Candidate explicitly says TJX beat guidance by 70 bps, matching the high-end comparison."
+        },
+        {
+          "text": "[criterion-3] 80bps beat from low end and 70bps beat from high end",
+          "passed": false,
+          "evidence": "The candidate omits the combined reference result and instead gives only a single 70 bps beat, which conflicts with the expected full statement."
+        }
+      ]
+    }
+  ]
+}

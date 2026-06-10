@@ -14,3 +14,8 @@ python3 ../agentv-deploy/scripts/check-public-result-artifacts.py .
 Writer credentials should come from `RESULT_SYNC_GITHUB_TOKEN` or local git/gh
 auth and should be scoped only to this result repository where possible. Reader
 mode is anonymous HTTPS clone/pull.
+
+
+## Published validation runs
+
+- `.agentv/results/runs/av-zk0.3-dexter-codex-web-baseline/2026-06-10T04-04-57-866Z/` — one-test live Codex web-search baseline for the native Dexter `llm-grader` rubric shape.
