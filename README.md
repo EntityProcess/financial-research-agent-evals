@@ -18,4 +18,7 @@ mode is anonymous HTTPS clone/pull.
 
 ## Published validation runs
 
-- `.agentv/results/runs/av-zk0.3-dexter-codex-web-baseline/2026-06-10T04-04-57-866Z/` — one-test live Codex web-search baseline for the native Dexter `llm-grader` rubric shape.
+- [50-case Codex financial-research baseline](.agentv/results/runs/age-14-task-bundle-dogfood/2026-06-10T08-35-26Z-age-14-codex/SUMMARY.md) — aggregate public baseline over 50 Dexter-adapted financial research questions.
+- [One-test Codex web-search baseline](.agentv/results/runs/av-zk0.3-dexter-codex-web-baseline/2026-06-10T04-04-57-866Z/SUMMARY.md) — early live plumbing check for the native Dexter `llm-grader` rubric shape.
+
+The source/eval repository also has a public narrative report: [`EntityProcess/financial-research-agent` `BASELINE_RESULTS.md`](https://github.com/EntityProcess/financial-research-agent/blob/main/BASELINE_RESULTS.md).
