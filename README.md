@@ -1,4 +1,4 @@
-# financial-research-agent-evals
+# financial-research-evals
 
 Public-safe AgentV result artifacts for the `financial-research-agent` demo
 project.
@@ -24,7 +24,7 @@ The source/eval repository also has a public narrative report: [`EntityProcess/f
 
 ## Static HTML reports
 
-- [50-case Codex financial-research baseline report](docs/index.html) — generated with `agentv results report .agentv/results/runs/age-14-task-bundle-dogfood/2026-06-10T08-35-26Z-age-14-codex --out docs/index.html`.
-- [One-case Dexter Codex web baseline report](docs/dexter-baseline.html) — generated with `agentv results report .agentv/results/runs/av-zk0.3-dexter-codex-web-baseline/2026-06-10T04-04-57-866Z --out docs/dexter-baseline.html`.
+- [50-case Codex financial-research baseline report](docs/index.html) — generated with `agentv results report .agentv/results/runs/age-14-task-bundle-dogfood/2026-06-10T08-35-26Z-age-14-codex --out docs/index.html`. Published at https://entityprocess.github.io/financial-research-evals/.
+- [One-case Dexter Codex web baseline report](docs/dexter-baseline.html) — generated with `agentv results report .agentv/results/runs/av-zk0.3-dexter-codex-web-baseline/2026-06-10T04-04-57-866Z --out docs/dexter-baseline.html`. Published at https://entityprocess.github.io/financial-research-evals/dexter-baseline.html.
 
-If GitHub Pages is enabled for this repository's `docs/` directory, `docs/index.html` can be served as the project homepage and `docs/dexter-baseline.html` as a secondary baseline page. Both files are self-contained, read-only AgentV reports and do not require a Dashboard server.
+GitHub Pages serves the `docs/` directory as the project homepage plus secondary baseline pages. Both files are self-contained, read-only AgentV reports and do not require a Dashboard server.
